@@ -148,3 +148,21 @@ FileHeader::Print()
     }
     delete [] data;
 }
+
+
+/***************************************+
+Practica 5:
+*********************************/
+//----------------------------------------------------------------------
+// FileHeader::Print_Sectores()
+// 	Imprime los sectores pertenecientes al archivo.
+//---------------------------------------------
+void
+FileHeader::Print_Sectores()
+{
+	for(int i = 0 ; i< numSectors; i++)
+	{
+		printf("%d, ",dataSectors[i]);
+	}
+printf("\n");
+}

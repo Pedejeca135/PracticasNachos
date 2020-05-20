@@ -163,3 +163,11 @@ BitMap::WriteBack(OpenFile *file)
 {
    file->WriteAt((char *)map, numWords * sizeof(unsigned), 0);
 }
+
+/************************
+Practica 5: Obtiene el numero de bits en el mapa de bits
+********************/
+int BitMap::getNumBits()
+{
+	return this->numBits;
+}

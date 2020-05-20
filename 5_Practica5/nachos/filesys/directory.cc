@@ -227,3 +227,6 @@ bool Directory:: Renombra(char* nombreArchivo, char* nuevoNombre)
     }
     return exitoRes;
 }
+
+
+

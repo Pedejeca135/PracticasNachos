@@ -186,19 +186,30 @@ FileSystem::Create(char *name, int initialSize)
     directory->FetchFrom(directoryFile);
 
     if (directory->Find(name) != -1)
-      success = FALSE;			// file is already in directory
+        {
+              success = FALSE;			// file is already in directory
+              printf("\nEl archivo que se quiere crear ya existe, intente con otro nombre.\n");
+        }
     else {	
         freeMap = new BitMap(NumSectors);
         freeMap->FetchFrom(freeMapFile);
         sector = freeMap->Find();	// find a sector to hold the file header
-    	if (sector == -1) 		
+    	if (sector == -1) 
+        {		printf("%s\n","sector == -1" );
             success = FALSE;		// no free block for file header 
+        }
         else if (!directory->Add(name, sector))
+        {
+            printf("%s\n","!directory->Add(name, sector)" );
             success = FALSE;	// no space in directory
+        }
 	else {
     	    hdr = new FileHeader;
 	    if (!hdr->Allocate(freeMap, initialSize))
+        {
+            printf("%s\n", "!hdr->Allocate(freeMap, initialSize)");
             	success = FALSE;	// no space on disk for data
+        }
 	    else {	
 	    	success = TRUE;
 		// everthing worked, flush all changes back to disk
@@ -341,7 +352,6 @@ FileSystem::Print()
 } 
 
 
-
 /**********************************************************
 *
 *   Practica 5: implementacion de los metodos.
@@ -363,7 +373,7 @@ void FileSystem::Renombra(char* nombreArchivo, char* nuevoNombre)
     {
         hdr->FetchFrom(sector);
 
-        if(directory->Rename(nombreArchivo,nuevoNombre))
+        if(directory->Renombra(nombreArchivo,nuevoNombre))
         {
             printf("El archivo %s ah sido renombrado como %s exitosamente\n",nombreArchivo,nuevoNombre);
             hdr->WriteBack(sector);         
@@ -390,12 +400,12 @@ void FileSystem::Print_LibresSectores()
     map->FetchFrom(freeMapFile);
 
     printf("\nSectores vacios en el disco:\n"); 
-    for (int i = 0; i < map->NumBits(); i++)
+    for (int i = 0; i < map->getNumBits(); i++)
     {
         if (!map->Test(i))
         {
             printf("%d, ", i);
-            sectoreLibres ++ ;
+            sectoresLibres ++ ;
         }
     }
     printf("\nSectores Totales: %d", NumSectors);
@@ -413,18 +423,21 @@ void FileSystem::Print_ArchivoSectores(char *nombreArchivo)
     Directory *directory = new Directory(NumDirEntries);
     FileHeader *hdr = new FileHeader();
     directory->FetchFrom(directoryFile);
-    int sector = directory->Find(fileName);
+    int sector = directory->Find(nombreArchivo);
 
     if (sector != -1)
     {
-        printf("\nSector del i-node: %d\n", sector);
+        printf("\nSector del i-nodo: %d\n", sector);
         hdr->FetchFrom(sector);
-        hdr->PrintSectors();
+        hdr->Print_Sectores();
         delete directory;
-        return true;
     }
     else
     {
         printf("\nNo se encontro el archivo especificado\n");
     }
 }
+
+
+
+

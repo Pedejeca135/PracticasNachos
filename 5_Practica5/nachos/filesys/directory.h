@@ -76,6 +76,7 @@ class Directory {
     ************************************************************************************/
     bool Renombra(char* nombreArchivo, char* nuevoNombre);//definicion del metodo para renombrar un archivo dentro del directorio.
 
+
   private:
     int tableSize;			// Number of directory entries
     DirectoryEntry *table;		// Table of pairs: 

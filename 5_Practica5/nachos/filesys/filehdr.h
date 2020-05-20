@@ -56,6 +56,11 @@ class FileHeader {
 
     void Print();			// Print the contents of the file.
 
+/***************************************+
+Practica 5:
+*********************************/
+	void Print_Sectores();
+
   private:
     int numBytes;			// Number of bytes in the file
     int numSectors;			// Number of data sectors in the file

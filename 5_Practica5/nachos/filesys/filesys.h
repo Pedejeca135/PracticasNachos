@@ -92,6 +92,7 @@ class FileSystem {
 	void Print_LibresSectores();//metodo para imprimir los sectores libres del disco.
     void Print_ArchivoSectores(char *nombreArchivo);//metodo para imprimir los sectores utilizados por un archivo especificado.
 
+
   private:
    OpenFile* freeMapFile;		// Bit map of free disk blocks,
 					// represented as a file

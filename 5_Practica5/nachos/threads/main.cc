@@ -62,8 +62,9 @@ extern void StartProcess(char *file), ConsoleTest(char *in, char *out);
 extern void MailTest(int networkID);
 
 /************************ Practrica 5********************/
-extern void Help(char* comando);
 extern void Manual();
+extern void Help(char* comando);
+extern void Info();
 
 //----------------------------------------------------------------------
 // main
@@ -94,27 +95,9 @@ main(int argc, char **argv)
 
     for (argc--, argv++; argc > 0; argc -= argCount, argv += argCount) {
 	argCount = 1;
-        if (!strcmp(*argv, "-z")){               // print copyright
+        if (!strcmp(*argv, "-z"))              // print copyright
             printf (copyright);
-		}
-		/*********************************************************
-		Practica5: nuevos comandos para desplegar informacion 
-		***********************************************************/
-		else if(!strcmp(*argv, "-inf")){ // imprime informacion del equipo y materia.
-			printf(info);
-		}
-		else if(!strcmp(*argv, "-man")){ // imprime informacion general de los comandos de nachos.
-			Manual();
-		}
-		else if(!strcmp(*argv, "-help")){ //imprime informacion del comando especificado.
-			if(argc > 1){
-				Help(*(argv+1));
-			}
-			else{
-				printf("\nSintaxis incorrecta intenta con: ./nachos -help nombre_del_comando ");
-				interrupt->Halt();
-			}
-		}
+		
 #ifdef USER_PROGRAM
         if (!strcmp(*argv, "-x")) {        	// run a user program
 	    ASSERT(argc > 1);
@@ -165,8 +148,8 @@ Practica 5. para las nuevas implementaciones en el sistema de archivos FileSyste
 			fileSystem->Print_ArchivoSectores(*(argv + 1));
 		}
 		else{// si solo hay un argumento, lo hace notar al usuario
-			Printf("\nNo se especifico ningun nombre de archivo...\n");
-			printf("Sintaxis correcta: ./nachos -sd nombre_archivo\n")
+			printf("\nNo se especifico ningun nombre de archivo...\n");
+			printf("Sintaxis correcta: ./nachos -sd nombre_archivo\n");
 			interrupt->Halt();
 		}
 	}
@@ -175,12 +158,36 @@ Practica 5. para las nuevas implementaciones en el sistema de archivos FileSyste
 			fileSystem->Renombra(*(argv + 1) , *(argv + 2));
 		}
 		else{
-			Printf("\nNo se especificaron los nombres de archivo correctamente...\n");
-			printf("Sintaxis correcta: ./nachos -rf nombre_archivo nombre_nuevo\n")
+			printf("\nNo se especificaron los nombres de archivo correctamente...\n");
+			printf("Sintaxis correcta: ./nachos -rf nombre_archivo nombre_nuevo\n");
 			interrupt->Halt();
 		}
 
 	}
+	else if(!strcmp(*argv, "-inf")){ // imprime informacion del equipo y materia.
+			Info();
+			interrupt->Halt();
+			
+		}
+		else if(!strcmp(*argv, "-man")){ // imprime informacion general de los comandos de nachos.
+			 Manual();
+			 interrupt->Halt();
+		}
+		else if(!strcmp(*argv, "-help")){ //imprime informacion del comando especificado.
+			if(argc > 1){
+				Help(*(argv + 1));
+				interrupt->Halt();
+			}
+			else{
+				printf("\nSintaxis incorrecta intenta con: ./nachos -help nombre_del_comando ");
+				interrupt->Halt();
+			}
+		}
+		else{
+			//printf("\n\nEl comando %s no fue encontrado en el sistema de archivos.\n",*argv);
+        	//printf("\nIntenta con el comando -man para saber cuales comandos estan disponibles..\n\tSintaxis:  ./nachos -man\n\n");        	
+		}
+
 #endif // FILESYS
 #ifdef NETWORK
         if (!strcmp(*argv, "-o")) {
@@ -204,3 +211,4 @@ Practica 5. para las nuevas implementaciones en el sistema de archivos FileSyste
 				// it from returning.
     return(0);			// Not reached...
 }
+
