@@ -72,17 +72,33 @@ AddrSpace::AddrSpace(OpenFile *executable)
     size = noffH.code.size + noffH.initData.size + noffH.uninitData.size 
 			+ UserStackSize;	// we need to increase the size
 						// to leave room for the stack
+    
     numPages = divRoundUp(size, PageSize);
+    
+    /**************************************************
+    Practica 0 : 
+    ***************************************************/
+    printf("\nTamaño del proceso: %d\n",size);//imprime el tamaño del proceso.
+    printf("\nNumero de pafinas para el proceso: %d",numPages);//imprime el numero de paginas necesarias para cargar el proceso.
+    
     size = numPages * PageSize;
 
+if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los procesos que usen mas paginas que las que se tienen.
+{
+    printf("\nEl tamaño del proceso excede las paginas disponibles, y no se ha implementado memoria virtual por lo que no puede ser cargado\n");
+}
     ASSERT(numPages <= NumPhysPages);		// check we're not trying
 						// to run anything too big --
 						// at least until we have
 						// virtual memory
 
-    DEBUG('a', "Initializing address space, num pages %d, size %d\n", 
-					numPages, size);
-// first, set up the translation 
+    DEBUG('a', "Initializing address space, num pages %d, size %d\n",numPages, size);
+
+    //Practica 0. para imprimir la tabla de paginas.
+    printf("\nTabla de paginas\n");
+    printf("Indice \t No.Marco \t Bit Validez \n");
+
+    // first, set up the translation 
     pageTable = new TranslationEntry[numPages];
     for (i = 0; i < numPages; i++) {
 	pageTable[i].virtualPage = i;	// for now, virtual page # = phys page #
@@ -93,8 +109,15 @@ AddrSpace::AddrSpace(OpenFile *executable)
 	pageTable[i].readOnly = FALSE;  // if the code segment was entirely on 
 					// a separate page, we could set its 
 					// pages to be read-only
+    //Practica0.
+    printf("%d \t %d \t %d\t",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid);//imprimir la informacion de la pagina actual con el indice i.
     }
-    
+
+    //Practica0
+    printf("\nMapeo de direcciones logicas\n");
+    printf("Dirección lógica \t No.Pagina(p) \t Desplazamiento(d) \t Dirección Fisica\t\n");
+
+
 // zero out the entire address space, to zero the unitialized data segment 
 // and the stack segment
     bzero(machine->mainMemory, size);
