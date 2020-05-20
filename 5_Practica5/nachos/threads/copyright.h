@@ -21,4 +21,5 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 #ifdef MAIN	/* include the copyright message in every executable */
 static char *copyright = "Copyright (c) 1992-1993 The Regents of the University of California.  All rights reserved.";
+static char *info = "\n\nNombres de los integrantes del equipo:\n\tPedro de Jesus Cantu Olivares.\n\nNombre de la materia:\n\tSistemas Operativos B.\n\nFecha de entrega de la práctica:\n\t17/Mayo/2020.\n\nSemestre:\n\t2019-2020/II.\n\nNombre del profesor:\n\tMarcela Ortiz Hernández."
 #endif // MAIN
