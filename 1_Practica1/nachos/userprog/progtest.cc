@@ -32,13 +32,11 @@ StartProcess(char *filename)
     }
     space = new AddrSpace(executable);    
     currentThread->space = space;
-
     delete executable;			// close file
-
     space->InitRegisters();		// set the initial register values
-    space->RestoreState();		// load page table register
-
+    space->RestoreState();		// load page table register    
     machine->Run();			// jump to the user progam
+
     ASSERT(FALSE);			// machine->Run never returns;
 					// the address space exits
 					// by doing the syscall "exit"

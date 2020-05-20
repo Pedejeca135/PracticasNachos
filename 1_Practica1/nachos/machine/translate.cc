@@ -239,6 +239,13 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     }
     pageFrame = entry->physicalPage;
 
+	/**********************************************
+	Practica0.
+	**************************************************/
+	//impresion de direcciones logicas
+	printf("%d \t\t\t %d \t\t\t %d \t\t\t %d\n",virtAddr,pageFrame,offset,(pageFrame * PageSize + offset));
+
+
     // if the pageFrame is too big, there is something really wrong! 
     // An invalid translation was loaded into the page table or TLB. 
     if (pageFrame >= NumPhysPages) { 
