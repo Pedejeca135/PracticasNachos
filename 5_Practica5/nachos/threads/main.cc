@@ -61,6 +61,10 @@ extern void Print(char *file), PerformanceTest(void);
 extern void StartProcess(char *file), ConsoleTest(char *in, char *out);
 extern void MailTest(int networkID);
 
+/************************ Practrica 5********************/
+extern void Help(char* comando);
+extern void Manual();
+
 //----------------------------------------------------------------------
 // main
 // 	Bootstrap the operating system kernel.  
@@ -96,15 +100,15 @@ main(int argc, char **argv)
 		/*********************************************************
 		Practica5: nuevos comandos para desplegar informacion 
 		***********************************************************/
-		else if(!strcmp(*argv, "-inf"){ // imprime informacion del equipo y materia.
+		else if(!strcmp(*argv, "-inf")){ // imprime informacion del equipo y materia.
 			printf(info);
 		}
-		else if(!strcmp(*argv, "-man"){ // imprime informacion general de los comandos de nachos.
-			manual();
+		else if(!strcmp(*argv, "-man")){ // imprime informacion general de los comandos de nachos.
+			Manual();
 		}
-		else if(!strcmp(*argv, "-help"){ //imprime informacion del comando especificado.
+		else if(!strcmp(*argv, "-help")){ //imprime informacion del comando especificado.
 			if(argc > 1){
-				help(*(argv+1));
+				Help(*(argv+1));
 			}
 			else{
 				printf("\nSintaxis incorrecta intenta con: ./nachos -help nombre_del_comando ");

@@ -183,3 +183,15 @@ PerformanceTest()
     stats->Print();
 }
 
+/************************************************************************************
+Practica 5: implementacion para el manual y el despliegue de informacion de comandos
+************************************************************************************/
+void Manual()
+{
+    printf("aqui va un manual XD");
+}
+
+void Help(char* comando)
+{
+    printf("%s\n",comando );
+}
