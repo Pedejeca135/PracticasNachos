@@ -78,14 +78,14 @@ AddrSpace::AddrSpace(OpenFile *executable)
     /**************************************************
     Practica 0 : 
     ***************************************************/
-    printf("\nTamaño del proceso: %d\n",size);//imprime el tamaño del proceso.
-    printf("\nNumero de pafinas para el proceso: %d",numPages);//imprime el numero de paginas necesarias para cargar el proceso.
+    printf("\nTamaño del proceso: %d Bytes.\n",size);//imprime el tamaño del proceso.
+    printf("\nNumero de paginas para el proceso: %d.",numPages);//imprime el numero de paginas necesarias para cargar el proceso.
     
     size = numPages * PageSize;
 
 if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los procesos que usen mas paginas que las que se tienen.
 {
-    printf("\nEl tamaño del proceso excede las paginas disponibles, y no se ha implementado memoria virtual por lo que no puede ser cargado\n");
+    printf("\n\nEl tamaño del proceso excede las paginas disponibles( %d ), y no se ha implementado memoria virtual por lo que no puede ser cargado.\n\n",NumPhysPages);
 }
     ASSERT(numPages <= NumPhysPages);		// check we're not trying
 						// to run anything too big --
@@ -95,8 +95,8 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
     DEBUG('a', "Initializing address space, num pages %d, size %d\n",numPages, size);
 
     //Practica 0. para imprimir la tabla de paginas.
-    printf("\nTabla de paginas\n");
-    printf("Indice \t No.Marco \t Bit Validez \n");
+    printf("\n\nTabla de paginas:\n");
+    printf("Indice \tNo.Marco\tBit Validez\n");
 
     // first, set up the translation 
     pageTable = new TranslationEntry[numPages];
@@ -110,11 +110,11 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
 					// a separate page, we could set its 
 					// pages to be read-only
     //Practica0.
-    printf("%d \t %d \t %d\t",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid);//imprimir la informacion de la pagina actual con el indice i.
+    printf("%d \t %d \t\t %d\n",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid);//imprimir la informacion de la pagina actual con el indice i.
     }
 
     //Practica0
-    printf("\nMapeo de direcciones logicas\n");
+    printf("\nMapeo de direcciones logicas:\n");
     printf("Dirección lógica \t No.Pagina(p) \t Desplazamiento(d) \t Dirección Fisica\t\n");
 
 
