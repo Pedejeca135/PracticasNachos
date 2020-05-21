@@ -57,8 +57,91 @@ SwapHeader (NoffHeader *noffH)
 //	"executable" is the file containing the object code to load into memory
 //----------------------------------------------------------------------
 
-AddrSpace::AddrSpace(OpenFile *executable)
+/******************************************
+Practica1
+*******************************************/
+//funcion para encontrar el indice de la ultima ocurrencia de un caracter dado.
+int strlo(char* array, char caracter)
 {
+
+    for(int i = strlen(array)-1 ; i>-1;i--)
+    {
+        if(array[i] == caracter)
+        {
+            return i;
+        }
+    }
+    return -1;
+
+}
+
+char* strsub(char* array, int indexOffset , int lenght)
+{
+    char res[lenght]= "";
+    for(int i = 0; i < lenght ; i++)
+    {
+        res[i] = array[indexOffset + i] ;
+    }
+    printf("retornara %s\n", res );
+    return res;
+}
+
+
+AddrSpace::AddrSpace(OpenFile *executable, char* filename)
+{
+
+
+/*
+    int lo = strlo(filename,'/');
+    char* auxPath = strsub(filename, lo+1, strlen(filename));
+    char path[]
+
+*/
+    /************************************************
+    Practica 1: para crear el archivo de intercambio
+    ******************************************************/
+    char swapPath [strlen(filename)+4] = "";
+    strcat(swapPath,filename);
+    strcat(swapPath,".swp");
+    printf("%s\n",swapPath);
+
+    if(!fileSystem->Create(swapPath,executable->Length()-40))
+    {
+        printf("\nNo se pudo crear el archivo de intercambio %s\n", swapPath );
+    }
+    else
+    {
+        OpenFile *swapOpenFile = fileSystem->Open(swapPath);
+
+        if(swapOpenFile == NULL)
+        {
+            printf("\nEl archivo de intercambio no existe\n");
+        }
+        else
+        {
+            char *aux;
+            aux = new char[executable->Length()-40];
+
+            int auxInt1 = executable->ReadAt(aux,executable->Length()-40,40);
+            if(auxInt1 > 0)
+            {
+                int auxInt2 = swapOpenFile->Write(aux,executable->Length()-40);
+
+                if(auxInt2 <= 0)
+                {
+                    printf("\nNo se pudo escribir en el archivo de intercambio\n");
+                }
+            }
+            else
+            {
+                printf("\nNo se pudo hacer lectura del ejecutable\n");
+            }
+        }
+    }
+
+    
+
+
     NoffHeader noffH;
     unsigned int i, size;
 
@@ -137,6 +220,10 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
     }
 
 }
+
+
+
+
 
 //----------------------------------------------------------------------
 // AddrSpace::~AddrSpace
