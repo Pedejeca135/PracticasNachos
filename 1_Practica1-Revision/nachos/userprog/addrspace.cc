@@ -58,7 +58,7 @@ SwapHeader (NoffHeader *noffH)
 //----------------------------------------------------------------------
 
 /******************************************
-Practica1
+Practica1 Revision
 *******************************************/
 //funcion para encontrar el indice de la ultima ocurrencia de un caracter dado.
 int strlo(char* array, char caracter)
@@ -77,25 +77,76 @@ int strlo(char* array, char caracter)
 
 char* strsub(char* array, int indexOffset , int lenght)
 {
-    char res[lenght]= "";
-    for(int i = 0; i < lenght ; i++)
+    char* res = new char[lenght+1];
+    
+    for(int i = 0; i < lenght + 1  ; i++)
     {
-        res[i] = array[indexOffset + i] ;
+        res[i] = array[indexOffset + i] ; 
     }
-    printf("retornara %s\n", res );
     return res;
 }
 
 AddrSpace::AddrSpace(OpenFile *executable, char* filename)
 {
 
+    /*******************************************************
+    Practica1 Revision
+    **********************************************************/
+    int indexRealName = strlo(filename,'/') +1 ;
+    int realNameLength = (strlen(filename) - indexRealName +1);
+    char *fileRealName = strsub(filename,indexRealName, strlen(filename) - indexRealName);
+    char archivoRevisionPath[11 + strlen(fileRealName) + 6] = "";
+    strcat(archivoRevisionPath, "../userprog/");
+    strcat(archivoRevisionPath, fileRealName);
+    strcat(archivoRevisionPath, "RA.rev");
+    printf("Se creara el archivo: %s\n", archivoRevisionPath);
+
+    if(!fileSystem->Create(archivoRevisionPath,executable->Length()-40))
+    {
+        printf("\nNo se pudo crear el archivo de intercambio %s\n", archivoRevisionPath );
+    }
+    else
+    {
+        OpenFile *revisionOpenFile = fileSystem->Open(archivoRevisionPath);
+
+        if(revisionOpenFile == NULL)
+        {
+            printf("\nEl archivo de intercambio no existe\n");
+        }
+        else
+        {
+            char *auxRev;
+            auxRev = new char[executable->Length()-40];
+
+            int auxInt1Rev = executable->ReadAt(auxRev,executable->Length()-40,40);
+            if(auxInt1Rev > 0)
+            {
+                int auxInt2Rev = revisionOpenFile->Write(auxRev,executable->Length()-40);
+
+                if(auxInt2Rev <= 0)
+                {
+                    printf("\nNo se pudo escribir en el archivo de intercambio\n");
+                }
+            }
+            else
+            {
+                printf("\nNo se pudo hacer lectura del ejecutable\n");
+            }
+        }
+    }
+
+
+
+
     /************************************************
     Practica 1: para crear el archivo de intercambio
     ******************************************************/
-    char swapPath [strlen(filename)+4] = "";
+    int swapFileNameLenght = strlen(filename)+4;
+    char swapPath [swapFileNameLenght] = "";
     strcat(swapPath,filename);
     strcat(swapPath,".swp");
-    printf("%s\n",swapPath);
+    printf("Se creara el archivo: %s\n",swapPath);
+
 
     if(!fileSystem->Create(swapPath,executable->Length()-40))
     {
@@ -130,9 +181,6 @@ AddrSpace::AddrSpace(OpenFile *executable, char* filename)
             }
         }
     }
-
-    
-
 
     NoffHeader noffH;
     unsigned int i, size;
