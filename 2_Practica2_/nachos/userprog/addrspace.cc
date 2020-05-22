@@ -239,6 +239,34 @@ AddrSpace::swapIn(int vpn)
 	return true;
 }
 
+/********************************************++
+Practica 2 metodo para hacer un swap out
+*************************************************/
+
+bool 
+AddrSpace::swapOut(int vpn)
+{
+	//file_name se agrego a machine
+	OpenFile *swp = fileSystem->Open(machine->file_name);	//abrimos el archivo
+	if(swp == NULL)
+	{
+		printf("swb no open\n");
+		return false;
+	}
+	pageTable[vpn].valid = TRUE;
+	pageTable[vpn].physicalPage = indexFrame;
+	swp->ReadAt(&(machine->mainMemory[indexFrame * PageSize]), PageSize, vpn * PageSize);
+	indexFrame++;
+	stats->numPageFaults++;
+	//char *v = new char[5];
+	//itoa(vpn, v, 10);
+	//strcat(cadenaRef, v);
+	//printf("%d, ", vpn);
+	if(stats->numPageFaults == 32)
+		printf("\nnumero de Fallos: %d\n", stats->numPageFaults++);
+	delete swp;	//cerramos el archivo
+	return true;
+}
 
 
 
