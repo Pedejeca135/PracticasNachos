@@ -92,10 +92,13 @@ Directory::FindIndex(char *name)
 {
     for (int i = 0; i < tableSize; i++)
         if (table[i].inUse && !strncmp(table[i].name, name, FileNameMaxLen))
-	    return i;
+        {
+            //printf("retorno %d",i );
+	       return i;
+        }
+        //printf("retorno %d",-1 );
     return -1;		// name not in directory
 }
-
 //----------------------------------------------------------------------
 // Directory::Find
 // 	Look up file name in directory, and return the disk sector number
@@ -202,20 +205,19 @@ Directory::Print()
 bool Directory:: Renombra(char* nombreArchivo, char* nuevoNombre)
 {
     bool exitoRes = FALSE;
-
     int indiceDelArchivo = FindIndex(nombreArchivo);
 
-    if(indiceDelArchivo != -1)// el archivo fue encontrado.
+    if(indiceDelArchivo >= 0)// el archivo fue encontrado.
     {
-        int nuevoNombreTam = sizeof(nuevoNombre)/sizeof(char);
+        int nuevoNombreTam = strlen(nuevoNombre);
         if(nuevoNombreTam > 9)//el nuevo nombre no cumple la condicion de tamaño del nombre.
         {
-            printf("El nuevo nombre %s exede el tamaño maximo de nombre de archivo\n",nuevoNombre);
+            printf("\nEl nuevo nombre %s exede el tamaño maximo de nombre de archivo\n\n",nuevoNombre);
             exitoRes = FALSE;
         }
         else// nos ponemos a trabajar.
         {
-            printf("Renombrando %s ...\n",table[indiceDelArchivo].name);
+            printf("\nRenombrando %s ...\n\n",table[indiceDelArchivo].name);
             strncpy(table[indiceDelArchivo].name,nuevoNombre, FileNameMaxLen);
             exitoRes = TRUE;
         }

@@ -92,7 +92,7 @@ main(int argc, char **argv)
 #ifdef THREADS
     ThreadTest();
 #endif
-
+    bool fileSysNoExiste = false;
     for (argc--, argv++; argc > 0; argc -= argCount, argv += argCount) {
 	argCount = 1;
         if (!strcmp(*argv, "-z"))              // print copyright
@@ -118,42 +118,51 @@ main(int argc, char **argv)
 #endif // USER_PROGRAM
 #ifdef FILESYS
 	if (!strcmp(*argv, "-cp")) { 		// copy from UNIX to Nachos
+		fileSysNoExiste = true;
 	    ASSERT(argc > 2);
 	    Copy(*(argv + 1), *(argv + 2));
 	    argCount = 3;
 	} else if (!strcmp(*argv, "-p")) {	// print a Nachos file
+		fileSysNoExiste = true;
 	    ASSERT(argc > 1);
 	    Print(*(argv + 1));
 	    argCount = 2;
 	} else if (!strcmp(*argv, "-r")) {	// remove Nachos file
+		fileSysNoExiste = true;
 	    ASSERT(argc > 1);
 	    fileSystem->Remove(*(argv + 1));
 	    argCount = 2;
 	} else if (!strcmp(*argv, "-l")) {	// list Nachos directory
+		fileSysNoExiste = true;
             fileSystem->List();
 	} else if (!strcmp(*argv, "-D")) {	// print entire filesystem
+		fileSysNoExiste = true;
             fileSystem->Print();
 	} else if (!strcmp(*argv, "-t")) {	// performance test
+		fileSysNoExiste = true;
             PerformanceTest();
 	}
 /*******************************************************************
 Practica 5. para las nuevas implementaciones en el sistema de archivos FileSystem.
 ***********************************************************************/
 	else if(!strcmp(*argv, "-sfd"))  {	//imprime los sectores libres del disco.
+		fileSysNoExiste = true;
 			fileSystem->Print_LibresSectores();
 	}
-	else if(!strcmp(*argv, "-sd"))	{	// imprime los sectores del archivo especificado.
+	else if(!strcmp(*argv, "-sf"))	{	// imprime los sectores del archivo especificado.
+		fileSysNoExiste = true;
 		//ASSERT(argc > 1);
 		if(argc > 1){
 			fileSystem->Print_ArchivoSectores(*(argv + 1));
 		}
 		else{// si solo hay un argumento, lo hace notar al usuario
-			printf("\nNo se especifico ningun nombre de archivo...\n");
+			printf("\nNo se especifico ningun nombre de archivo...\n\n");
 			printf("Sintaxis correcta: ./nachos -sd nombre_archivo\n");
 			interrupt->Halt();
 		}
 	}
 	else if(!strcmp(*argv, "-rf"))	{ // cambia el nombre de un archivo.
+		fileSysNoExiste = true;
 		if(argc > 2){
 			fileSystem->Renombra(*(argv + 1) , *(argv + 2));
 		}
@@ -162,18 +171,19 @@ Practica 5. para las nuevas implementaciones en el sistema de archivos FileSyste
 			printf("Sintaxis correcta: ./nachos -rf nombre_archivo nombre_nuevo\n");
 			interrupt->Halt();
 		}
-
 	}
 	else if(!strcmp(*argv, "-inf")){ // imprime informacion del equipo y materia.
+		fileSysNoExiste = true;
 			Info();
-			interrupt->Halt();
-			
+			interrupt->Halt();			
 		}
 		else if(!strcmp(*argv, "-man")){ // imprime informacion general de los comandos de nachos.
+			fileSysNoExiste = true;
 			 Manual();
 			 interrupt->Halt();
 		}
 		else if(!strcmp(*argv, "-help")){ //imprime informacion del comando especificado.
+			fileSysNoExiste = true;
 			if(argc > 1){
 				Help(*(argv + 1));
 				interrupt->Halt();
@@ -183,9 +193,10 @@ Practica 5. para las nuevas implementaciones en el sistema de archivos FileSyste
 				interrupt->Halt();
 			}
 		}
-		else{
-			//printf("\n\nEl comando %s no fue encontrado en el sistema de archivos.\n",*argv);
-        	//printf("\nIntenta con el comando -man para saber cuales comandos estan disponibles..\n\tSintaxis:  ./nachos -man\n\n");        	
+		else if(fileSysNoExiste == false && strcmp(*argv, "-f")){
+			printf("\n\nEl comando %s no fue encontrado en el sistema de archivos.\n\n",*argv);
+        	printf("\nIntenta con el comando -man para saber cuales comandos estan disponibles..\n\tSintaxis:  ./nachos -man\n\n"); 
+        	fileSysNoExiste = true;       	
 		}
 
 #endif // FILESYS

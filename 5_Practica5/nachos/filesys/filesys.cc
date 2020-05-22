@@ -182,13 +182,15 @@ FileSystem::Create(char *name, int initialSize)
 
     DEBUG('f', "Creating file %s, size %d\n", name, initialSize);
 
+    printf("\n\nCreando archivo %s, tamaño: %d\n\n", name, initialSize);
+
     directory = new Directory(NumDirEntries);
     directory->FetchFrom(directoryFile);
 
     if (directory->Find(name) != -1)
         {
               success = FALSE;			// file is already in directory
-              printf("\nEl archivo que se quiere crear ya existe, intente con otro nombre.\n");
+              printf("\n\nEl archivo que se quiere crear (%s) ya existe, intente con otro nombre.\n\n",name);
         }
     else {	
         freeMap = new BitMap(NumSectors);
@@ -211,6 +213,7 @@ FileSystem::Create(char *name, int initialSize)
             	success = FALSE;	// no space on disk for data
         }
 	    else {	
+            printf("%s\n", "El archivo %s fue creado exitosamente.\n\n",name );
 	    	success = TRUE;
 		// everthing worked, flush all changes back to disk
     	    	hdr->WriteBack(sector); 		
@@ -375,16 +378,16 @@ void FileSystem::Renombra(char* nombreArchivo, char* nuevoNombre)
 
         if(directory->Renombra(nombreArchivo,nuevoNombre))
         {
-            printf("El archivo %s ah sido renombrado como %s exitosamente\n",nombreArchivo,nuevoNombre);
+            printf("\nEl archivo %s ah sido renombrado como %s exitosamente\n\n",nombreArchivo,nuevoNombre);
             hdr->WriteBack(sector);         
             directory->WriteBack(directoryFile);
+            delete directory;
+            return;
         }
-        else
-        {
             printf("El archivo %s no cambio...\n",nombreArchivo);
-        }
+        
     }
-    delete directory;
+    
 }
 
 //----------------------------------------------------------------------
@@ -429,12 +432,14 @@ void FileSystem::Print_ArchivoSectores(char *nombreArchivo)
     {
         printf("\nSector del i-nodo: %d\n", sector);
         hdr->FetchFrom(sector);
+        printf("\nSectoresLibres:\n");
         hdr->Print_Sectores();
+        printf("\n");
         delete directory;
     }
     else
     {
-        printf("\nNo se encontro el archivo especificado\n");
+        printf("\nNo se encontro el archivo especificado\n\n");
     }
 }
 

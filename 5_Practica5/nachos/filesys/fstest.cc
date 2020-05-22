@@ -200,7 +200,7 @@ void Manual()
         printf("\n\nNOMBRE:\n\t%s.","-cp");
         printf("\n\nSINTAXIS:\n\t./nachos -cp Nombre_Archivo_Unix Nombre_Archivo_Nachos.");
         printf("\n\nDESCRIPCION:\n\tCopia un archivo de UNIX a el directorio de nachos como un archivo de nachos.");
-        printf("\n\nNOTA: El nombre del archivo de nachos no debe exceder los 9 caracteres.\n\n");
+        printf("\n\nNOTA:\n\tEl nombre del archivo de nachos no debe exceder los 9 caracteres.\n\n");
         printf("\n\n-------------------------------------------------------------------------------\n\n");
     
         printf("\n\n-------------------------------------------------------------------------------\n\n");
@@ -257,85 +257,135 @@ Practica 5. para las nuevas implementaciones en el sistema de archivos FileSyste
         printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s","-rf");
         printf("\n\nSINTAXIS:\n\t./nachos -rf Nombre_Archivo_Nachos Nuevo_Nombre");
-        printf("\n\nDESCRIPCION:\n\tCambia elo nombre del archivo indicado a el nuevo nombre.");
-        printf("\n\nNOTA: El nombre del nuevo archivo de nachos no debe exceder los 9 caracteres.\n\n");  
-        printf("\n\n-------------------------------------------------------------------------------\n\n");       
+        printf("\n\nDESCRIPCION:\n\tCambia el nombre del archivo indicado a el nuevo nombre.");
+        printf("\n\nNOTA:\n\tEl nombre del nuevo archivo de nachos no debe exceder los 9 caracteres.\n\n");  
+        printf("\n\n-------------------------------------------------------------------------------\n\n");     
+
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
+        printf("\n\nNOMBRE:\n\t%s","-man");
+        printf("\n\nSINTAXIS:\n\t./nachos -man");
+        printf("\n\nDESCRIPCION:\n\tDespliega este manual con informacion de todos los comandos\n\tdel sistema de archivos."); 
+        printf("\n\n-------------------------------------------------------------------------------\n\n"); 
+
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
+        printf("\n\nNOMBRE:\n\t%s","-help");
+        printf("\n\nSINTAXIS:\n\t./nachos -help Comando.");
+        printf("\n\nDESCRIPCION:\n\tDespliega informacion sobre el comando especificado.");
+        printf("\n\nNOTA:\n\tEl comando debe existir para el sistema de archivos.\n\n"); 
+        printf("\n\n-------------------------------------------------------------------------------\n\n"); 
+
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
+        printf("\n\nNOMBRE:\n\t%s","-inf");
+        printf("\n\nSINTAXIS:\n\t./nachos -info");
+        printf("\n\nDESCRIPCION:\n\tDespliega informacion sobre el equipo de trabajo."); 
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
+            
 }
 
 void Help(char* comando)
 {
     if (!strcmp(comando, "-f")) {
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s.",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -f ");
         printf("\n\nDESCRIPCION:\n\tFormatea el disco de nachos para ser usado.\n\n");
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     }
     else if (!strcmp(comando, "-cp")) {
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s.",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -cp Nombre_Archivo_Unix Nombre_Archivo_Nachos.");
         printf("\n\nDESCRIPCION:\n\tCopia un archivo de UNIX a el directorio de nachos como un archivo de nachos.");
-        printf("\n\nNOTA: El nombre del archivo de nachos no debe exceder los 9 caracteres.\n\n");
+        printf("\n\nNOTA:\n\tEl nombre del archivo de nachos no debe exceder los 9 caracteres.\n\n");
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     } else if (!strcmp(comando, "-p")) {  // print a Nachos file
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -p Nombre_Archivo_Nachos");
         printf("\n\nDESCRIPCION:\n\tImprime las caracteristicas del archivo indicado.\n\n");
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     } else if (!strcmp(comando, "-r")) {  // remove Nachos file
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -r Nombre_Archivo_Nachos");
         printf("\n\nDESCRIPCION:\n\tElimina del directorio el archivo indicado.\n\n");        
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     } else if (!strcmp(comando, "-l")) {  // list Nachos directory
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -l");
         printf("\n\nDESCRIPCION:\n\tImprime todos los archivios del directorio de nachos.\n\n");
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     } else if (!strcmp(comando, "-D")) {  // print entire filesystem
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -D");
         printf("\n\nDESCRIPCION:\n\tImprime todo el sistema de archivos actual(instanciado) de nachos.\n\n");            
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     } else if (!strcmp(comando, "-t")) {  // performance test
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -t");
         printf("\n\nDESCRIPCION:\n\tPrueba que funcione correctamente el sistema de archivos.\n\n");
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     }
 /*******************************************************************
 Practica 5. para las nuevas implementaciones en el sistema de archivos FileSystem.
 ***********************************************************************/
     else if(!strcmp(comando, "-sfd"))  {  //imprime los sectores libres del disco.
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -sfd");
-        printf("\n\nDESCRIPCION:\n\tImprime todos sectores libres del sistema de archivos.\n\n");           
+        printf("\n\nDESCRIPCION:\n\tImprime todos sectores libres del sistema de archivos.\n\n");         
+        printf("\n\n-------------------------------------------------------------------------------\n\n");  
     }
     else if(!strcmp(comando, "-sf"))  {   // imprime los sectores del archivo especificado.
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -sf Nombre_Archivo_Nachos");
         printf("\n\nDESCRIPCION:\n\tImprime todos sectores usados por el archivo indicado.\n\n");        
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     }
     else if(!strcmp(comando, "-rf"))  { // cambia el nombre de un archivo.
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -rf Nombre_Archivo_Nachos Nuevo_Nombre");
-        printf("\n\nDESCRIPCION:\n\tCambia elo nombre del archivo indicado a el nuevo nombre.");
-        printf("\n\nNOTA: El nombre del nuevo archivo de nachos no debe exceder los 9 caracteres.\n\n");         
+        printf("\n\nDESCRIPCION:\n\tCambia el nombre del archivo indicado a el nuevo nombre.");
+        printf("\n\nNOTA:\n\tEl nombre del nuevo archivo de nachos no debe exceder los 9 caracteres.\n\n");   
+        printf("\n\n-------------------------------------------------------------------------------\n\n");      
     }
     else if(!strcmp(comando, "-man"))  { // cambia el nombre de un archivo.
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -man");
         printf("\n\nDESCRIPCION:\n\tDespliega informacion sobre todos los comandos del sistema de archivos.");     
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     }
     else if(!strcmp(comando, "-help"))  { // cambia el nombre de un archivo.
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
         printf("\n\nNOMBRE:\n\t%s",comando);
         printf("\n\nSINTAXIS:\n\t./nachos -help Comando.");
         printf("\n\nDESCRIPCION:\n\tDespliega informacion sobre el comando especificado.");
-        printf("\n\nNOTA: El comando debe existir para el sistema de archivos.\n\n");         
+        printf("\n\nNOTA:\n\tEl comando debe existir para el sistema de archivos.\n\n");         
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
     }
-
+    else if(!strcmp(comando, "-inf"))  { //info
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
+        printf("\n\nNOMBRE:\n\t%s",comando);
+        printf("\n\nSINTAXIS:\n\t./nachos -info");
+        printf("\n\nDESCRIPCION:\n\tDespliega informacion sobre el equipo de trabajo.");        
+        printf("\n\n-------------------------------------------------------------------------------\n\n");
+    }
     else
     {
         printf("\n\nEl comando %s no fue encontrado en el sistema de archivos.\n",comando);
-        printf("\nIntenta con el comando -man para saber cuales comandos estan disponibles..\n\tSintaxis:  ./nachos -man\n\n");
+        printf("\nIntenta con el comando -man para saber cuales comandos estan disponibles y su sintaxis...\n\tSintaxis:  ./nachos -man\n\n");
     }
 }
 
 void Info()
 {
-    printf("\n---- Informacion del equipo ----\n");
+    printf("\n\n----------------  Informacion del equipo  --------------------------\n\n");
  
     printf("\nIntegrantes:\n");
     printf("\tCantú Olivares Pedro de Jesus.\n");
@@ -351,4 +401,5 @@ void Info()
  
     printf("\nMaestra:\n");
     printf("\tMarcela Ortiz Hernández\n");
+    printf("\n\n--------------------------------------------------------------------\n\n");
 }
