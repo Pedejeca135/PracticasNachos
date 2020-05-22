@@ -66,11 +66,12 @@ ExceptionHandler(ExceptionType which)
     	//currentThread->space->swapIn(vpn);
     	if(stats->numPageFaults > NumPhysPages)
     	{
+    		printf("\n\n::::::::::::::FAIL::::::::::::::\nNo hay suficientes marcos para terminar el proceso.\n\n");
     		interrupt->Halt();
     	}
     	else
     	{
-    		
+
     	}
     }
     else 

@@ -101,21 +101,18 @@ AddrSpace::AddrSpace(OpenFile *executable, char* filename)
     char swapPath [strlen(filename)+4] = "";
     strcat(swapPath,filename);
     strcat(swapPath,".swp");
-    printf("%s\n",swapPath);
+    //printf("%s\n",swapPath);
 
     if(!fileSystem->Create(swapPath,executable->Length()-40))
     {
         printf("\nNo se pudo crear el archivo de intercambio %s\n", swapPath );
     }
     else
-    {
-        //machine->swapFileName  swapPath;
-        //strcpy(machine->swapFileName,swapPath);
+    {        
         machine->swapFileName = new char[strlen(swapPath)];
         strcpy(machine->swapFileName,swapPath);
-        //machine->swapFileName = swapPath;
-        printf("\n%s |-| Tam original::::: %d \n",swapPath, strlen(swapPath));
-        printf("\n%s |-| Tam otro::::: %d \n",machine->swapFileName, strlen(machine->swapFileName));
+        //printf("\n%s |-| Tam original::::: %d \n",swapPath, strlen(swapPath));
+        //printf("\n%s |-| Tam otro::::: %d \n",machine->swapFileName, strlen(machine->swapFileName));
         /*OpenFile **/swapOpenFile = fileSystem->Open(swapPath);
 
         if(swapOpenFile == NULL)
@@ -191,8 +188,8 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
     printf("Indice \tNo.Marco\tBit Validez\n");
 
     // first, set up the translation 
-    //pageTable = new TranslationEntry[numPages];
-    pageTable = new TranslationEntry[NumPhysPages];
+    pageTable = new TranslationEntry[numPages];
+    //pageTable = new TranslationEntry[NumPhysPages];
     /*********************************************
     Practica 2
     **********************************************/
@@ -211,8 +208,8 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
     }
 
     //Practica0
-    printf("\nMapeo de direcciones logicas:\n");
-    printf("Dirección lógica \t No.Pagina(p) \t Desplazamiento(d) \t Dirección Fisica\t\n");
+    //printf("\nMapeo de direcciones logicas:\n");
+    //printf("Dirección lógica \t No.Pagina(p) \t Desplazamiento(d) \t Dirección Fisica\t\n");
 
 
 // zero out the entire address space, to zero the unitialized data segment 
@@ -314,7 +311,7 @@ bool
 AddrSpace::swapIn(int vpn)
 {
     //file_name se agrego a machine
-    printf("%s\n",machine->swapFileName );
+    printf("Haciendo swaping de %s\n",machine->swapFileName );
     OpenFile *swp = fileSystem->Open(machine->swapFileName);   //abrimos el archivo
     if(swp == NULL)
     {
@@ -324,7 +321,7 @@ AddrSpace::swapIn(int vpn)
     else
     {
         int direccionBaseDeMarco = stats->numPageFaults * PageSize;
-        //swp->ReadAt(&(machine->mainMemory[indexFrame * PageSize]), PageSize, vpn * PageSize);
+        printf("Escribiendo en la direccion %d de la memoria principal\nTamaño de escritura: %d\nDesde la direccion %d del archivo de intercambio.\n",direccionBaseDeMarco,PageSize,vpn * PageSize);
         swp->ReadAt(&(machine->mainMemory[direccionBaseDeMarco]),PageSize,vpn * PageSize);
     }
     delete swp; //cerramos el archivo

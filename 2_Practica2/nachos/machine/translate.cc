@@ -212,11 +212,12 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     /*********************************
     Practica 2 Impresion de informacion.
     ************************************/
-    printf("\n::TRANS::\n");
-    printf("Direccion Virtual: %d\n", virtAddr);
+//    printf("\n::TRANS::\n");
+    /*printf("Direccion Virtual: %d\n", virtAddr);
     printf("Tamaño de pagina: %d\n",PageSize);
     printf("vpn calculado: %d\n",vpn);
-    printf("offset calculado: %d\n\n",offset);
+    printf("offset calculado: %d\n",offset);
+    */
     
     if (tlb == NULL) 
     {		// => page table => vpn is index into table
@@ -228,6 +229,13 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 		}
 		else if (!pageTable[vpn].valid) 
 		{
+			printf("\n::TRANS_FAIL::\n");
+			printf("Fallo #  %d\n",stats->numPageFaults +1);
+			printf("Direccion Virtual(Logica): %d\n", virtAddr);
+			printf("offset(Desplazamiento) calculado: %d\n",offset);
+    		printf("Tamaño de pagina: %d\n",PageSize);
+   			printf("vpn calculado: %d\n",vpn);
+
 			/*****************************
 			Practica 2. Fallo de pagina.
 			*****************************/
@@ -235,25 +243,40 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 			{
 				if(currentThread->space->swapIn(vpn))
 				{
-					//asignar el marco a la pagina.
+					//asignar el marco a la pagina.					
 					pageTable[vpn].physicalPage = stats->numPageFaults;
+					printf("Nuevo marco para la pagina %d : %d\n",vpn,pageTable[vpn].physicalPage);
 					//Hacer la pagina valida.
 					pageTable[vpn].valid = TRUE;
 				}
 				else
 				{
-					printf("No se pudo hacer swapIn: -vpn: %d -numPageFaults: %d",vpn,stats->numPageFaults );
+					printf("::::ERROR::::\nNo se pudo hacer swapIn: -vpn: %d -numPageFaults: %d -NumPhysPages: %d",vpn,stats->numPageFaults,NumPhysPages );
 				}
 							
 			}
+			else
+			{
+				printf("::::ERROR::::\nNo hay suficientes marcos para hacer otro swapIn\n");
+			}
 			//imprimir y sumar uno al numero de fallosa 
-				printf("\nFallo # %d\n", ++stats->numPageFaults);
-			
+				printf("Fallo # %d Fin.\n", ++stats->numPageFaults);		
 
 		    DEBUG('a', "virtual page # %d too large for page table size %d!\n",virtAddr, pageTableSize);
 		    return PageFaultException;
 		}
+
 		entry = &pageTable[vpn];
+		printf("\n::TRANS::\n");
+		printf("Direccion Virtual(Logica): %d\n", virtAddr);
+		printf("Numero de pagina:%d\n",entry->physicalPage);
+		printf("offset(Desplazamiento) calculado: %d\n",offset);
+    	printf("Tamaño de pagina: %d\n",PageSize);
+   		printf("vpn calculado: %d\n",vpn);
+   		printf("Direccion Fisica: %d\n",(entry->physicalPage* PageSize + offset) );
+
+    	
+		printf("\n");
     } 
     else 
     {
@@ -285,7 +308,10 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 	Practica0.
 	**************************************************/
 	//impresion de direcciones logicas
-	printf("%d \t\t\t %d \t\t\t %d \t\t\t %d\n",virtAddr,pageFrame,offset,(pageFrame * PageSize + offset));
+	//printf("%d \t\t\t %d \t\t\t %d \t\t\t %d\n",virtAddr,pageFrame,offset,(pageFrame * PageSize + offset));
+
+	//printf("Dirección lógica \t No.Pagina(p) \t Desplazamiento(d) \t Dirección Fisica\t\n",virtAddr,virtAddr,pageFrame,offset,pageFrame * PageSize + offset);
+
 
 
     // if the pageFrame is too big, there is something really wrong! 
