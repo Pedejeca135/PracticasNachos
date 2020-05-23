@@ -1,0 +1,201 @@
+
+Tamaño del proceso: 1344 Bytes.
+
+Numero de paginas para el proceso: 11.
+
+Tabla de paginas:
+Indice 	No.Marco	Bit Validez
+0 	 0 		 0
+1 	 0 		 0
+2 	 0 		 0
+3 	 0 		 0
+4 	 0 		 0
+5 	 0 		 0
+6 	 0 		 0
+7 	 0 		 0
+8 	 0 		 0
+9 	 0 		 0
+10 	 0 		 0
+
+::TRANS_FAIL::
+Fallo #  1
+Direccion Virtual(Logica): 0
+offset(Desplazamiento) calculado: 0
+Tamaño de pagina: 128
+vpn calculado: 0
+Haciendo swaping de ../test/halt.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 0 del archivo de intercambio.
+Nuevo marco para la pagina 0 : 0
+Fallo # 1 Fin.
+
+::TRANS::
+Direccion Virtual(Logica): 0
+Numero de pagina:0
+offset(Desplazamiento) calculado: 0
+Tamaño de pagina: 128
+vpn calculado: 0
+Direccion Fisica: 0
+
+
+::TRANS::
+Direccion Virtual(Logica): 4
+Numero de pagina:0
+offset(Desplazamiento) calculado: 4
+Tamaño de pagina: 128
+vpn calculado: 0
+Direccion Fisica: 4
+
+
+::TRANS_FAIL::
+Fallo #  2
+Direccion Virtual(Logica): 208
+offset(Desplazamiento) calculado: 80
+Tamaño de pagina: 128
+vpn calculado: 1
+Haciendo swaping de ../test/halt.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 128 del archivo de intercambio.
+Nuevo marco para la pagina 1 : 1
+Fallo # 2 Fin.
+
+::TRANS::
+Direccion Virtual(Logica): 208
+Numero de pagina:1
+offset(Desplazamiento) calculado: 80
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 208
+
+
+::TRANS::
+Direccion Virtual(Logica): 212
+Numero de pagina:1
+offset(Desplazamiento) calculado: 84
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 212
+
+
+::TRANS_FAIL::
+Fallo #  3
+Direccion Virtual(Logica): 1384
+offset(Desplazamiento) calculado: 104
+Tamaño de pagina: 128
+vpn calculado: 10
+Haciendo swaping de ../test/halt.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1280 del archivo de intercambio.
+Nuevo marco para la pagina 10 : 2
+Fallo # 3 Fin.
+
+::TRANS::
+Direccion Virtual(Logica): 212
+Numero de pagina:1
+offset(Desplazamiento) calculado: 84
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 212
+
+
+::TRANS::
+Direccion Virtual(Logica): 1384
+Numero de pagina:2
+offset(Desplazamiento) calculado: 104
+Tamaño de pagina: 128
+vpn calculado: 10
+Direccion Fisica: 360
+
+
+::TRANS::
+Direccion Virtual(Logica): 216
+Numero de pagina:1
+offset(Desplazamiento) calculado: 88
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 216
+
+
+::TRANS::
+Direccion Virtual(Logica): 1380
+Numero de pagina:2
+offset(Desplazamiento) calculado: 100
+Tamaño de pagina: 128
+vpn calculado: 10
+Direccion Fisica: 356
+
+
+::TRANS::
+Direccion Virtual(Logica): 220
+Numero de pagina:1
+offset(Desplazamiento) calculado: 92
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 220
+
+
+::TRANS::
+Direccion Virtual(Logica): 1376
+Numero de pagina:2
+offset(Desplazamiento) calculado: 96
+Tamaño de pagina: 128
+vpn calculado: 10
+Direccion Fisica: 352
+
+
+::TRANS::
+Direccion Virtual(Logica): 224
+Numero de pagina:1
+offset(Desplazamiento) calculado: 96
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 224
+
+
+::TRANS::
+Direccion Virtual(Logica): 228
+Numero de pagina:1
+offset(Desplazamiento) calculado: 100
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 228
+
+
+::TRANS::
+Direccion Virtual(Logica): 232
+Numero de pagina:1
+offset(Desplazamiento) calculado: 104
+Tamaño de pagina: 128
+vpn calculado: 1
+Direccion Fisica: 232
+
+
+::TRANS::
+Direccion Virtual(Logica): 16
+Numero de pagina:0
+offset(Desplazamiento) calculado: 16
+Tamaño de pagina: 128
+vpn calculado: 0
+Direccion Fisica: 16
+
+
+::TRANS::
+Direccion Virtual(Logica): 20
+Numero de pagina:0
+offset(Desplazamiento) calculado: 20
+Tamaño de pagina: 128
+vpn calculado: 0
+Direccion Fisica: 20
+
+Machine halting!
+
+Ticks: total 23, idle 0, system 10, user 13
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 3
+Network I/O: packets received 0, sent 0
+
+Cleaning up...
