@@ -34,9 +34,7 @@ class AddrSpace {
     Practica 2:
     ******************************************************/
     bool swapIn(int vpn);//funcion para el swap In
-    char* nombreDelArchivo;//nombre del archivo en ejecucion
-    int indexFrame=0;
-    void HandlePageFault(int virtualAddress, int pageNumber, int pageOffset);
+  
 
 
   private:
