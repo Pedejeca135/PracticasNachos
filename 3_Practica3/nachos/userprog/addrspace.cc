@@ -185,7 +185,7 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
 
     //Practica 0. para imprimir la tabla de paginas.
     printf("\n\nTabla de paginas:\n");
-    printf("Indice \tNo.Marco\tBit Validez\n");
+    printf("Indice \tNo.Marco\tBit Validez\tsucia\n");
 
     // first, set up the translation 
     pageTable = new TranslationEntry[numPages];
@@ -204,7 +204,7 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
 					// a separate page, we could set its 
 					// pages to be read-only
     //Practica0.
-    printf("%d \t %d \t\t %d\n",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid);//imprimir la informacion de la pagina actual con el indice i.
+    printf("%d \t %d \t\t %d\t\t%d\n",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid,pageTable[i].dirty);//imprimir la informacion de la pagina actual con el indice i.
     }
 
     //Practica0
@@ -334,25 +334,48 @@ AddrSpace::swapIn(int vpn)
 Practica 3 
 *************************************************/
 bool
-AddrSpace::swapOut(int vpn)
+AddrSpace::swapOut()
 {
     //file_name se agrego a machine
     printf("Haciendo swapOut a %s\n",machine->swapFileName );
-    OpenFile *swp = fileSystem->Open(machine->swapFileName);   //abrimos el archivo
-    if(swp == NULL)
+
+    int indicePagina = -1;
+
+    for(int i = 0 ; i < numPages ; i++)
     {
-        printf("\nswabFile no abrio\n");
-        return false;
+        if(pageTable[i].physicalPage == stats->frameCounter && pageTable[i].valid == TRUE)
+        {
+            indicePagina = i ;
+            break;
+        }
+    }
+
+    if(indicePagina <= -1)
+    {
+        printf("Pagina no encontrada\n");
     }
     else
     {
-        //int direccionBaseDeMarco = stats->numPageFaults * PageSize;
-        int direccionBaseDeMarco = stats->frameCounter * PageSize;
-        printf("Escribiendo en la direccion %d de la memoria principal\nTamaño de escritura: %d\nDesde la direccion %d del archivo de intercambio.\n",direccionBaseDeMarco,PageSize,vpn * PageSize);
-        //swp->ReadAt(&(machine->mainMemory[direccionBaseDeMarco]),PageSize,vpn * PageSize);
-       //swp->WriteAt(char *from, int numBytes, int position);
-       swp->WriteAt(&(machine->mainMemory[direccionBaseDeMarco]), PageSize, vpn*PageSize);
+        if(pageTable[indicePagina].dirty)//la pagina esta sucia.
+        {
+
+            OpenFile *swp = fileSystem->Open(machine->swapFileName);   //abrimos el archivo
+            int direccionBaseDeMarco = stats->frameCounter * PageSize;
+            if(swp == NULL)
+            {
+                printf("\nswabFile no abrio\n");
+                return false;
+            }
+            else
+            {
+                printf("Escribiendo en la direccion %d de la memoria principal\nTamaño de escritura: %d\nDesde la direccion %d del archivo de intercambio.\n",direccionBaseDeMarco,PageSize,indicePagina* PageSize);
+                swp->WriteAt(&(machine->mainMemory[direccionBaseDeMarco]), PageSize, indicePagina* PageSize);
+            }
+            delete swp; //cerramos el archivo
+        }
+        pageTable[indicePagina].valid = FALSE;
+        pageTable[indicePagina].dirty = FALSE;
+        return true;
     }
-    delete swp; //cerramos el archivo
-    return true;
+    return false;    
 }

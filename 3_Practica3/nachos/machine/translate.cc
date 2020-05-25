@@ -198,6 +198,7 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     if (((size == 4) && (virtAddr & 0x3)) || ((size == 2) && (virtAddr & 0x1))){
 	DEBUG('a', "alignment problem at %d, size %d!\n", virtAddr, size);
 	printf("\nException : AddressErrorException\n");
+	printf("int virtAddr %d \n  int* physAddr %d \n int size %d \n  bool writing%\n",virtAddr,physAddr,size,writing);
 	return AddressErrorException;
     }
     
@@ -213,13 +214,7 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
     /*********************************
     Practica 2 Impresion de informacion.
     ************************************/
-//    printf("\n::TRANS::\n");
-    /*printf("Direccion Virtual: %d\n", virtAddr);
-    printf("Tamaño de pagina: %d\n",PageSize);
-    printf("vpn calculado: %d\n",vpn);
-    printf("offset calculado: %d\n",offset);
-    */
-    
+
     if (tlb == NULL) 
     {		// => page table => vpn is index into table
 		if (vpn >= pageTableSize) 
@@ -244,11 +239,14 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 			{
 				stats->frameCounter = 0;
 			}
+			printf("contador de Marco: %d \n", stats->frameCounter);
 
-			if(pageTable[stats->frameCounter].dirty )//si la pagina cambio entonces hay que hacer un swapOut.
-			{
-				currentThread->space->swapOut(vpn);
-			}
+			/************************
+			Practica 3 llamado  la funcion swapOut.
+			*******************************/
+			currentThread->space->swapOut();
+			
+			//hacer el cambio la pagina que se paso al disco( valid = false y dirty = false;)			
 				if(currentThread->space->swapIn(vpn))
 				{
 					//asignar el marco a la pagina.					
@@ -264,7 +262,9 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 				}
 			
 			//imprimir y sumar uno al numero de fallosa
+
 				stats->frameCounter++; 
+
 				printf("Fallo # %d Fin.\n", ++stats->numPageFaults);		
 
 		    DEBUG('a', "virtual page # %d too large for page table size %d!\n",virtAddr, pageTableSize);
@@ -278,9 +278,7 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 		printf("offset(Desplazamiento) calculado: %d\n",offset);
     	printf("Tamaño de pagina: %d\n",PageSize);
    		printf("vpn calculado: %d\n",vpn);
-   		printf("Direccion Fisica: %d\n",(entry->physicalPage* PageSize + offset) );
-
-    	
+   		printf("Direccion Fisica: %d\n",(entry->physicalPage* PageSize + offset) );    	
 		printf("\n");
     } 
     else 

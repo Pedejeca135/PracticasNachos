@@ -40,6 +40,7 @@ class Statistics {
     Practica 3
     *************************************/
     int frameCounter;
+    
 
     Statistics(); 		// initialize everything to zero
 
