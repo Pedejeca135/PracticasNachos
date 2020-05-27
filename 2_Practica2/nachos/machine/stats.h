@@ -12,6 +12,7 @@
 #define STATS_H
 
 #include "copyright.h"
+//#include "translate.h"
 
 // The following class defines the statistics that are to be kept
 // about Nachos behavior -- how much time (ticks) elapsed, how
@@ -36,7 +37,20 @@ class Statistics {
     int numPacketsSent;		// number of packets sent over the network
     int numPacketsRecvd;	// number of packets received over the network
 
+
+/********************************
+Practica 2 impresion final
+****************************/
+    int numPaginasEntabla;
+
+
     Statistics(); 		// initialize everything to zero
+
+    /***************************************
+     practica 2
+    ****************************************/
+     void PrintTabla();
+
 
     void Print();		// print collected statistics
 };

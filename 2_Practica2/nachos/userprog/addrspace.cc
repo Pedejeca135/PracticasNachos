@@ -158,6 +158,8 @@ AddrSpace::AddrSpace(OpenFile *executable, char* filename)
 						// to leave room for the stack
     
     numPages = divRoundUp(size, PageSize);
+
+    stats->numPaginasEntabla = numPages;
     
     /**************************************************
     Practica 0 : 

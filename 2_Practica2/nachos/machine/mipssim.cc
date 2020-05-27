@@ -37,10 +37,13 @@ Machine::Run()
 	       currentThread->getName(), stats->totalTicks);
     interrupt->setStatus(UserMode);
     for (;;) {
+    	//printf("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB \n");
         OneInstruction(instr);
 	interrupt->OneTick();
 	if (singleStep && (runUntilTime <= stats->totalTicks))
-	  Debugger();
+		{
+		  Debugger();
+		}
     }
 }
 

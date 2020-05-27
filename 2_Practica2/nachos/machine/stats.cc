@@ -22,6 +22,9 @@ Statistics::Statistics()
     numDiskReads = numDiskWrites = 0;
     numConsoleCharsRead = numConsoleCharsWritten = 0;
     numPageFaults = numPacketsSent = numPacketsRecvd = 0;
+
+    //impresion final
+    numPaginasEntabla = 0;
 }
 
 //----------------------------------------------------------------------
@@ -42,3 +45,10 @@ Statistics::Print()
     printf("Network I/O: packets received %d, sent %d\n", numPacketsRecvd, 
 	numPacketsSent);
 }
+
+void 
+Statistics::PrintTabla()
+{
+
+}
+

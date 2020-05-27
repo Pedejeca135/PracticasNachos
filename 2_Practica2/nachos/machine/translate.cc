@@ -258,9 +258,29 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
 			else
 			{
 				printf("::::ERROR::::\nNo hay suficientes marcos para hacer otro swapIn\n");
+				//printf("\n\n Imprimiendo tabla de paginas final...\n\n");
+				//printf("\n\nTabla de paginas:\n");
+				/*if(stats->numPageFaults >= 1)
+    			printf("Indice \tNo.Marco\tBit Validez\n");
+    			if(stats->numPageFaults >= 1)
+				for (i = 0; i < stats->numPaginasEntabla; i++) 
+                {
+                   
+                    printf("%d \t %d \t\t %d\n",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid);//imprimir la informacion de la pagina actual con el indice i.
+                }*/
 			}
 			//imprimir y sumar uno al numero de fallosa 
-				printf("Fallo # %d Fin.\n", ++stats->numPageFaults);		
+				printf("Fallo # %d Fin.\n", ++stats->numPageFaults);	
+
+				/*if(stats->numPageFaults >= 2)
+    			printf("Indice \tNo.Marco\tBit Validez\n");
+    			if(stats->numPageFaults >= 2)
+				for (i = 0; i < stats->numPaginasEntabla; i++) 
+                {
+                   
+                    printf("%d \t %d \t\t %d\n",pageTable[i].virtualPage,pageTable[i].physicalPage,pageTable[i].valid);//imprimir la informacion de la pagina actual con el indice i.
+                }
+                */	
 
 		    DEBUG('a', "virtual page # %d too large for page table size %d!\n",virtAddr, pageTableSize);
 		    return PageFaultException;
