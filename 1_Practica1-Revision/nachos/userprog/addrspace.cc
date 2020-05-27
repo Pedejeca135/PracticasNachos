@@ -60,7 +60,8 @@ SwapHeader (NoffHeader *noffH)
 /******************************************
 Practica1 Revision
 *******************************************/
-//funcion para encontrar el indice de la ultima ocurrencia de un caracter dado.
+//funcion para encontrar el indice de la ultima ocurrencia 
+//de un caracter dado.
 int strlo(char* array, char caracter)
 {
 
@@ -74,7 +75,8 @@ int strlo(char* array, char caracter)
     return -1;
 
 }
-
+//funcion que regresa una subcadena, dada una cadena original
+//el inicio de la subcadena y su tamaño.
 char* strsub(char* array, int indexOffset , int lenght)
 {
     char* res = new char[lenght+1];
@@ -125,7 +127,7 @@ AddrSpace::AddrSpace(OpenFile *executable, char* filename)
 
                 if(auxInt2Rev <= 0)
                 {
-                    printf("\nNo se pudo escribir en el archivo de intercambio\n");
+                    printf("\nNo se pudo escribir en el archivo de revision\n");
                 }
             }
             else
@@ -259,7 +261,7 @@ if(numPages > NumPhysPages) // Para evitar que se impriman las tablas en los pro
 			noffH.initData.size, noffH.initData.inFileAddr);
     }
 
-}
+}//AddrSpace constructor(END).
 
 
 
