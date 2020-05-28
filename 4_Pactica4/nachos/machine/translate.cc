@@ -269,6 +269,7 @@ Machine::Translate(int virtAddr, int* physAddr, int size, bool writing)
    			/*****************************+
    			Practica 3 swapOut
    			*******************************/
+   			//printf("%d Va a hacer swapUot\n",stats->numPageFaults);
    			currentThread->space->swapOut();
 
 			/*****************************

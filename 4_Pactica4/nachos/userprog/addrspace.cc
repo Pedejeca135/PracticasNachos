@@ -326,6 +326,7 @@ AddrSpace::swapIn(int vpn)
         //printf("Escribiendo en la direccion %d de la memoria principal\nTamaño de escritura: %d\nDesde la direccion %d del archivo de intercambio.\n",direccionBaseDeMarco,PageSize,vpn * PageSize);
         swp->ReadAt(&(machine->mainMemory[direccionBaseDeMarco]),PageSize,vpn * PageSize);
         stats->numDiskReads++;
+
     }
     delete swp; //cerramos el archivo
     return true;
@@ -375,6 +376,7 @@ AddrSpace::swapOut()
                 //printf("Escribiendo en la direccion %d de la memoria principal\nTamaño de escritura: %d\nDesde la direccion %d del archivo de intercambio.\n",direccionBaseDeMarco,PageSize,indicePagina* PageSize);
                 swp->WriteAt(&(machine->mainMemory[direccionBaseDeMarco]), PageSize, indicePagina* PageSize);
                 stats->numDiskWrites++;
+                //printf("%d la Pagina esta sucia\n",stats->numDiskWrites++);
             }
             delete swp; //cerramos el archivo
 
