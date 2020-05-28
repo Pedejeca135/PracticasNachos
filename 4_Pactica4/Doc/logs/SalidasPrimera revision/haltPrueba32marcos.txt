@@ -1,0 +1,24 @@
+
+Fallo #  1
+Direccion Virtual(Logica): 0
+offset(Desplazamiento) calculado: 0
+vpn calculado: 0
+
+Fallo #  2
+Direccion Virtual(Logica): 208
+offset(Desplazamiento) calculado: 80
+vpn calculado: 1
+
+Fallo #  3
+Direccion Virtual(Logica): 1384
+offset(Desplazamiento) calculado: 104
+vpn calculado: 10
+Machine halting!
+
+Ticks: total 23, idle 0, system 10, user 13
+Disk I/O: reads 3, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 3
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

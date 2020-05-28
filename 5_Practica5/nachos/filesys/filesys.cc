@@ -213,7 +213,7 @@ FileSystem::Create(char *name, int initialSize)
             	success = FALSE;	// no space on disk for data
         }
 	    else {	
-            printf("%s\n", "El archivo %s fue creado exitosamente.\n\n",name );
+            printf("\n", "El archivo %s fue creado exitosamente.\n\n",name );
 	    	success = TRUE;
 		// everthing worked, flush all changes back to disk
     	    	hdr->WriteBack(sector); 		
@@ -271,6 +271,11 @@ FileSystem::Open(char *name)
 bool
 FileSystem::Remove(char *name)
 { 
+    /*******************************
+    Practica 5
+    ********************************/
+    printf("\nEliminando el archivo %s ...\n",name);
+
     Directory *directory;
     BitMap *freeMap;
     FileHeader *fileHdr;
@@ -280,9 +285,11 @@ FileSystem::Remove(char *name)
     directory->FetchFrom(directoryFile);
     sector = directory->Find(name);
     if (sector == -1) {
+        printf("\nNo se encontro el archivo %s.\n",name);
        delete directory;
        return FALSE;			 // file not found 
     }
+
     fileHdr = new FileHeader;
     fileHdr->FetchFrom(sector);
 
@@ -291,7 +298,14 @@ FileSystem::Remove(char *name)
 
     fileHdr->Deallocate(freeMap);  		// remove data blocks
     freeMap->Clear(sector);			// remove header block
-    directory->Remove(name);
+    if(directory->Remove(name))
+    {
+        printf("\nEl archivo %s se borro exitosamente.\n\n",name);
+    }
+    else
+    {
+        printf("\nEl archivo %s NO SE ELIMINO.\n",name);
+    }
 
     freeMap->WriteBack(freeMapFile);		// flush to disk
     directory->WriteBack(directoryFile);        // flush to disk
@@ -432,7 +446,7 @@ void FileSystem::Print_ArchivoSectores(char *nombreArchivo)
     {
         printf("\nSector del i-nodo: %d\n", sector);
         hdr->FetchFrom(sector);
-        printf("\nSectoresLibres:\n");
+        printf("\nSectores Del Archivo:\n");
         hdr->Print_Sectores();
         printf("\n");
         delete directory;

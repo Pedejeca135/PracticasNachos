@@ -1,0 +1,126 @@
+
+Tamaño del proceso: 6880 Bytes.
+
+Numero de paginas para el proceso: 54.vpn -> Fallo# 1: 0
+vpn -> Fallo# 2: 1
+vpn -> Fallo# 3: 53
+vpn -> Fallo# 4: 2
+vpn -> Fallo# 5: 8
+vpn -> Fallo# 6: 3
+vpn -> Fallo# 7: 20
+vpn -> Fallo# 8: 33
+vpn -> Fallo# 9: 4
+vpn -> Fallo# 10: 21
+vpn -> Fallo# 11: 9
+vpn -> Fallo# 12: 34
+vpn -> Fallo# 13: 22
+vpn -> Fallo# 14: 10
+vpn -> Fallo# 15: 35
+vpn -> Fallo# 16: 23
+vpn -> Fallo# 17: 11
+vpn -> Fallo# 18: 36
+vpn -> Fallo# 19: 24
+vpn -> Fallo# 20: 12
+vpn -> Fallo# 21: 37
+vpn -> Fallo# 22: 25
+vpn -> Fallo# 23: 13
+vpn -> Fallo# 24: 38
+vpn -> Fallo# 25: 26
+vpn -> Fallo# 26: 14
+vpn -> Fallo# 27: 39
+vpn -> Fallo# 28: 27
+vpn -> Fallo# 29: 15
+vpn -> Fallo# 30: 40
+vpn -> Fallo# 31: 28
+vpn -> Fallo# 32: 16
+vpn -> Fallo# 33: 41
+vpn -> Fallo# 34: 29
+vpn -> Fallo# 35: 1
+vpn -> Fallo# 36: 53
+vpn -> Fallo# 37: 2
+vpn -> Fallo# 38: 17
+vpn -> Fallo# 39: 3
+vpn -> Fallo# 40: 42
+vpn -> Fallo# 41: 30
+vpn -> Fallo# 42: 4
+vpn -> Fallo# 43: 18
+vpn -> Fallo# 44: 43
+vpn -> Fallo# 45: 31
+vpn -> Fallo# 46: 19
+vpn -> Fallo# 47: 44
+vpn -> Fallo# 48: 32
+vpn -> Fallo# 49: 20
+vpn -> Fallo# 50: 45
+vpn -> Fallo# 51: 33
+vpn -> Fallo# 52: 5
+vpn -> Fallo# 53: 6
+vpn -> Fallo# 54: 8
+vpn -> Fallo# 55: 7
+vpn -> Fallo# 56: 21
+vpn -> Fallo# 57: 22
+vpn -> Fallo# 58: 23
+vpn -> Fallo# 59: 24
+vpn -> Fallo# 60: 25
+vpn -> Fallo# 61: 26
+vpn -> Fallo# 62: 27
+vpn -> Fallo# 63: 9
+vpn -> Fallo# 64: 28
+vpn -> Fallo# 65: 34
+vpn -> Fallo# 66: 10
+vpn -> Fallo# 67: 35
+vpn -> Fallo# 68: 29
+vpn -> Fallo# 69: 53
+vpn -> Fallo# 70: 11
+vpn -> Fallo# 71: 36
+vpn -> Fallo# 72: 12
+vpn -> Fallo# 73: 37
+vpn -> Fallo# 74: 30
+vpn -> Fallo# 75: 4
+vpn -> Fallo# 76: 13
+vpn -> Fallo# 77: 38
+vpn -> Fallo# 78: 31
+vpn -> Fallo# 79: 14
+vpn -> Fallo# 80: 39
+vpn -> Fallo# 81: 32
+vpn -> Fallo# 82: 20
+vpn -> Fallo# 83: 15
+vpn -> Fallo# 84: 40
+vpn -> Fallo# 85: 5
+vpn -> Fallo# 86: 6
+vpn -> Fallo# 87: 33
+vpn -> Fallo# 88: 7
+vpn -> Fallo# 89: 21
+vpn -> Fallo# 90: 22
+vpn -> Fallo# 91: 23
+vpn -> Fallo# 92: 24
+vpn -> Fallo# 93: 25
+vpn -> Fallo# 94: 26
+vpn -> Fallo# 95: 27
+vpn -> Fallo# 96: 16
+vpn -> Fallo# 97: 28
+vpn -> Fallo# 98: 41
+vpn -> Fallo# 99: 17
+vpn -> Fallo# 100: 42
+vpn -> Fallo# 101: 29
+vpn -> Fallo# 102: 53
+vpn -> Fallo# 103: 18
+vpn -> Fallo# 104: 43
+vpn -> Fallo# 105: 19
+vpn -> Fallo# 106: 44
+vpn -> Fallo# 107: 30
+vpn -> Fallo# 108: 4
+vpn -> Fallo# 109: 45
+vpn -> Fallo# 110: 0
+Machine halting!
+
+Ticks: total 632507, idle 0, system 10, user 632497
+Disk I/O: reads 110, writes 48
+Console I/O: reads 0, writes 0
+Paging: faults 110
+Network I/O: packets received 0, sent 0
+
+Cleaning up...
+
+Tamaño del proceso: 6880 Bytes.
+
+Numero de paginas para el proceso: 54.
