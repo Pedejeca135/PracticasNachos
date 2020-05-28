@@ -337,9 +337,6 @@ Practica 3
 bool
 AddrSpace::swapOut()
 {
-
-    
-
     int indicePagina = -1;
 
     for(int i = 0 ; i < numPages ; i++)
