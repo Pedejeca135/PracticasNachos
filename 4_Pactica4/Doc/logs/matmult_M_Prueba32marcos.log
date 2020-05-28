@@ -1,0 +1,559 @@
+
+Fallo #  1
+Direccion Virtual(Logica): 0
+offset(Desplazamiento) calculado: 0
+vpn calculado: 0
+
+Fallo #  2
+Direccion Virtual(Logica): 208
+offset(Desplazamiento) calculado: 80
+vpn calculado: 1
+
+Fallo #  3
+Direccion Virtual(Logica): 6888
+offset(Desplazamiento) calculado: 104
+vpn calculado: 53
+
+Fallo #  4
+Direccion Virtual(Logica): 264
+offset(Desplazamiento) calculado: 8
+vpn calculado: 2
+
+Fallo #  5
+Direccion Virtual(Logica): 1040
+offset(Desplazamiento) calculado: 16
+vpn calculado: 8
+
+Fallo #  6
+Direccion Virtual(Logica): 384
+offset(Desplazamiento) calculado: 0
+vpn calculado: 3
+
+Fallo #  7
+Direccion Virtual(Logica): 2640
+offset(Desplazamiento) calculado: 80
+vpn calculado: 20
+
+Fallo #  8
+Direccion Virtual(Logica): 4240
+offset(Desplazamiento) calculado: 16
+vpn calculado: 33
+
+Fallo #  9
+Direccion Virtual(Logica): 512
+offset(Desplazamiento) calculado: 0
+vpn calculado: 4
+
+Fallo #  10
+Direccion Virtual(Logica): 2688
+offset(Desplazamiento) calculado: 0
+vpn calculado: 21
+
+Fallo #  11
+Direccion Virtual(Logica): 1152
+offset(Desplazamiento) calculado: 0
+vpn calculado: 9
+
+Fallo #  12
+Direccion Virtual(Logica): 4352
+offset(Desplazamiento) calculado: 0
+vpn calculado: 34
+
+Fallo #  13
+Direccion Virtual(Logica): 2816
+offset(Desplazamiento) calculado: 0
+vpn calculado: 22
+
+Fallo #  14
+Direccion Virtual(Logica): 1280
+offset(Desplazamiento) calculado: 0
+vpn calculado: 10
+
+Fallo #  15
+Direccion Virtual(Logica): 4480
+offset(Desplazamiento) calculado: 0
+vpn calculado: 35
+
+Fallo #  16
+Direccion Virtual(Logica): 2944
+offset(Desplazamiento) calculado: 0
+vpn calculado: 23
+
+Fallo #  17
+Direccion Virtual(Logica): 1408
+offset(Desplazamiento) calculado: 0
+vpn calculado: 11
+
+Fallo #  18
+Direccion Virtual(Logica): 4608
+offset(Desplazamiento) calculado: 0
+vpn calculado: 36
+
+Fallo #  19
+Direccion Virtual(Logica): 3072
+offset(Desplazamiento) calculado: 0
+vpn calculado: 24
+
+Fallo #  20
+Direccion Virtual(Logica): 1536
+offset(Desplazamiento) calculado: 0
+vpn calculado: 12
+
+Fallo #  21
+Direccion Virtual(Logica): 4736
+offset(Desplazamiento) calculado: 0
+vpn calculado: 37
+
+Fallo #  22
+Direccion Virtual(Logica): 3200
+offset(Desplazamiento) calculado: 0
+vpn calculado: 25
+
+Fallo #  23
+Direccion Virtual(Logica): 1664
+offset(Desplazamiento) calculado: 0
+vpn calculado: 13
+
+Fallo #  24
+Direccion Virtual(Logica): 4864
+offset(Desplazamiento) calculado: 0
+vpn calculado: 38
+
+Fallo #  25
+Direccion Virtual(Logica): 3328
+offset(Desplazamiento) calculado: 0
+vpn calculado: 26
+
+Fallo #  26
+Direccion Virtual(Logica): 1792
+offset(Desplazamiento) calculado: 0
+vpn calculado: 14
+
+Fallo #  27
+Direccion Virtual(Logica): 4992
+offset(Desplazamiento) calculado: 0
+vpn calculado: 39
+
+Fallo #  28
+Direccion Virtual(Logica): 3456
+offset(Desplazamiento) calculado: 0
+vpn calculado: 27
+
+Fallo #  29
+Direccion Virtual(Logica): 1920
+offset(Desplazamiento) calculado: 0
+vpn calculado: 15
+
+Fallo #  30
+Direccion Virtual(Logica): 5120
+offset(Desplazamiento) calculado: 0
+vpn calculado: 40
+
+Fallo #  31
+Direccion Virtual(Logica): 3584
+offset(Desplazamiento) calculado: 0
+vpn calculado: 28
+
+Fallo #  32
+Direccion Virtual(Logica): 2048
+offset(Desplazamiento) calculado: 0
+vpn calculado: 16
+
+Fallo #  33
+Direccion Virtual(Logica): 5248
+offset(Desplazamiento) calculado: 0
+vpn calculado: 41
+
+Fallo #  34
+Direccion Virtual(Logica): 3712
+offset(Desplazamiento) calculado: 0
+vpn calculado: 29
+
+Fallo #  35
+Direccion Virtual(Logica): 236
+offset(Desplazamiento) calculado: 108
+vpn calculado: 1
+
+Fallo #  36
+Direccion Virtual(Logica): 6864
+offset(Desplazamiento) calculado: 80
+vpn calculado: 53
+
+Fallo #  37
+Direccion Virtual(Logica): 264
+offset(Desplazamiento) calculado: 8
+vpn calculado: 2
+
+Fallo #  38
+Direccion Virtual(Logica): 2176
+offset(Desplazamiento) calculado: 0
+vpn calculado: 17
+
+Fallo #  39
+Direccion Virtual(Logica): 384
+offset(Desplazamiento) calculado: 0
+vpn calculado: 3
+
+Fallo #  40
+Direccion Virtual(Logica): 5376
+offset(Desplazamiento) calculado: 0
+vpn calculado: 42
+
+Fallo #  41
+Direccion Virtual(Logica): 3840
+offset(Desplazamiento) calculado: 0
+vpn calculado: 30
+
+Fallo #  42
+Direccion Virtual(Logica): 512
+offset(Desplazamiento) calculado: 0
+vpn calculado: 4
+
+Fallo #  43
+Direccion Virtual(Logica): 2304
+offset(Desplazamiento) calculado: 0
+vpn calculado: 18
+
+Fallo #  44
+Direccion Virtual(Logica): 5504
+offset(Desplazamiento) calculado: 0
+vpn calculado: 43
+
+Fallo #  45
+Direccion Virtual(Logica): 3968
+offset(Desplazamiento) calculado: 0
+vpn calculado: 31
+
+Fallo #  46
+Direccion Virtual(Logica): 2432
+offset(Desplazamiento) calculado: 0
+vpn calculado: 19
+
+Fallo #  47
+Direccion Virtual(Logica): 5632
+offset(Desplazamiento) calculado: 0
+vpn calculado: 44
+
+Fallo #  48
+Direccion Virtual(Logica): 4096
+offset(Desplazamiento) calculado: 0
+vpn calculado: 32
+
+Fallo #  49
+Direccion Virtual(Logica): 2560
+offset(Desplazamiento) calculado: 0
+vpn calculado: 20
+
+Fallo #  50
+Direccion Virtual(Logica): 5760
+offset(Desplazamiento) calculado: 0
+vpn calculado: 45
+
+Fallo #  51
+Direccion Virtual(Logica): 4224
+offset(Desplazamiento) calculado: 0
+vpn calculado: 33
+
+Fallo #  52
+Direccion Virtual(Logica): 640
+offset(Desplazamiento) calculado: 0
+vpn calculado: 5
+
+Fallo #  53
+Direccion Virtual(Logica): 768
+offset(Desplazamiento) calculado: 0
+vpn calculado: 6
+
+Fallo #  54
+Direccion Virtual(Logica): 1040
+offset(Desplazamiento) calculado: 16
+vpn calculado: 8
+
+Fallo #  55
+Direccion Virtual(Logica): 896
+offset(Desplazamiento) calculado: 0
+vpn calculado: 7
+
+Fallo #  56
+Direccion Virtual(Logica): 2720
+offset(Desplazamiento) calculado: 32
+vpn calculado: 21
+
+Fallo #  57
+Direccion Virtual(Logica): 2880
+offset(Desplazamiento) calculado: 64
+vpn calculado: 22
+
+Fallo #  58
+Direccion Virtual(Logica): 2960
+offset(Desplazamiento) calculado: 16
+vpn calculado: 23
+
+Fallo #  59
+Direccion Virtual(Logica): 3120
+offset(Desplazamiento) calculado: 48
+vpn calculado: 24
+
+Fallo #  60
+Direccion Virtual(Logica): 3200
+offset(Desplazamiento) calculado: 0
+vpn calculado: 25
+
+Fallo #  61
+Direccion Virtual(Logica): 3360
+offset(Desplazamiento) calculado: 32
+vpn calculado: 26
+
+Fallo #  62
+Direccion Virtual(Logica): 3520
+offset(Desplazamiento) calculado: 64
+vpn calculado: 27
+
+Fallo #  63
+Direccion Virtual(Logica): 1152
+offset(Desplazamiento) calculado: 0
+vpn calculado: 9
+
+Fallo #  64
+Direccion Virtual(Logica): 3600
+offset(Desplazamiento) calculado: 16
+vpn calculado: 28
+
+Fallo #  65
+Direccion Virtual(Logica): 4352
+offset(Desplazamiento) calculado: 0
+vpn calculado: 34
+
+Fallo #  66
+Direccion Virtual(Logica): 1280
+offset(Desplazamiento) calculado: 0
+vpn calculado: 10
+
+Fallo #  67
+Direccion Virtual(Logica): 4480
+offset(Desplazamiento) calculado: 0
+vpn calculado: 35
+
+Fallo #  68
+Direccion Virtual(Logica): 3760
+offset(Desplazamiento) calculado: 48
+vpn calculado: 29
+
+Fallo #  69
+Direccion Virtual(Logica): 6872
+offset(Desplazamiento) calculado: 88
+vpn calculado: 53
+
+Fallo #  70
+Direccion Virtual(Logica): 1408
+offset(Desplazamiento) calculado: 0
+vpn calculado: 11
+
+Fallo #  71
+Direccion Virtual(Logica): 4608
+offset(Desplazamiento) calculado: 0
+vpn calculado: 36
+
+Fallo #  72
+Direccion Virtual(Logica): 1536
+offset(Desplazamiento) calculado: 0
+vpn calculado: 12
+
+Fallo #  73
+Direccion Virtual(Logica): 4736
+offset(Desplazamiento) calculado: 0
+vpn calculado: 37
+
+Fallo #  74
+Direccion Virtual(Logica): 3856
+offset(Desplazamiento) calculado: 16
+vpn calculado: 30
+
+Fallo #  75
+Direccion Virtual(Logica): 608
+offset(Desplazamiento) calculado: 96
+vpn calculado: 4
+
+Fallo #  76
+Direccion Virtual(Logica): 1664
+offset(Desplazamiento) calculado: 0
+vpn calculado: 13
+
+Fallo #  77
+Direccion Virtual(Logica): 4864
+offset(Desplazamiento) calculado: 0
+vpn calculado: 38
+
+Fallo #  78
+Direccion Virtual(Logica): 3984
+offset(Desplazamiento) calculado: 16
+vpn calculado: 31
+
+Fallo #  79
+Direccion Virtual(Logica): 1792
+offset(Desplazamiento) calculado: 0
+vpn calculado: 14
+
+Fallo #  80
+Direccion Virtual(Logica): 4992
+offset(Desplazamiento) calculado: 0
+vpn calculado: 39
+
+Fallo #  81
+Direccion Virtual(Logica): 4112
+offset(Desplazamiento) calculado: 16
+vpn calculado: 32
+
+Fallo #  82
+Direccion Virtual(Logica): 2676
+offset(Desplazamiento) calculado: 116
+vpn calculado: 20
+
+Fallo #  83
+Direccion Virtual(Logica): 1920
+offset(Desplazamiento) calculado: 0
+vpn calculado: 15
+
+Fallo #  84
+Direccion Virtual(Logica): 5120
+offset(Desplazamiento) calculado: 0
+vpn calculado: 40
+
+Fallo #  85
+Direccion Virtual(Logica): 640
+offset(Desplazamiento) calculado: 0
+vpn calculado: 5
+
+Fallo #  86
+Direccion Virtual(Logica): 768
+offset(Desplazamiento) calculado: 0
+vpn calculado: 6
+
+Fallo #  87
+Direccion Virtual(Logica): 4224
+offset(Desplazamiento) calculado: 0
+vpn calculado: 33
+
+Fallo #  88
+Direccion Virtual(Logica): 896
+offset(Desplazamiento) calculado: 0
+vpn calculado: 7
+
+Fallo #  89
+Direccion Virtual(Logica): 2708
+offset(Desplazamiento) calculado: 20
+vpn calculado: 21
+
+Fallo #  90
+Direccion Virtual(Logica): 2868
+offset(Desplazamiento) calculado: 52
+vpn calculado: 22
+
+Fallo #  91
+Direccion Virtual(Logica): 2948
+offset(Desplazamiento) calculado: 4
+vpn calculado: 23
+
+Fallo #  92
+Direccion Virtual(Logica): 3108
+offset(Desplazamiento) calculado: 36
+vpn calculado: 24
+
+Fallo #  93
+Direccion Virtual(Logica): 3268
+offset(Desplazamiento) calculado: 68
+vpn calculado: 25
+
+Fallo #  94
+Direccion Virtual(Logica): 3348
+offset(Desplazamiento) calculado: 20
+vpn calculado: 26
+
+Fallo #  95
+Direccion Virtual(Logica): 3508
+offset(Desplazamiento) calculado: 52
+vpn calculado: 27
+
+Fallo #  96
+Direccion Virtual(Logica): 2048
+offset(Desplazamiento) calculado: 0
+vpn calculado: 16
+
+Fallo #  97
+Direccion Virtual(Logica): 3600
+offset(Desplazamiento) calculado: 16
+vpn calculado: 28
+
+Fallo #  98
+Direccion Virtual(Logica): 5248
+offset(Desplazamiento) calculado: 0
+vpn calculado: 41
+
+Fallo #  99
+Direccion Virtual(Logica): 2176
+offset(Desplazamiento) calculado: 0
+vpn calculado: 17
+
+Fallo #  100
+Direccion Virtual(Logica): 5376
+offset(Desplazamiento) calculado: 0
+vpn calculado: 42
+
+Fallo #  101
+Direccion Virtual(Logica): 3776
+offset(Desplazamiento) calculado: 64
+vpn calculado: 29
+
+Fallo #  102
+Direccion Virtual(Logica): 6872
+offset(Desplazamiento) calculado: 88
+vpn calculado: 53
+
+Fallo #  103
+Direccion Virtual(Logica): 2304
+offset(Desplazamiento) calculado: 0
+vpn calculado: 18
+
+Fallo #  104
+Direccion Virtual(Logica): 5504
+offset(Desplazamiento) calculado: 0
+vpn calculado: 43
+
+Fallo #  105
+Direccion Virtual(Logica): 2432
+offset(Desplazamiento) calculado: 0
+vpn calculado: 19
+
+Fallo #  106
+Direccion Virtual(Logica): 5632
+offset(Desplazamiento) calculado: 0
+vpn calculado: 44
+
+Fallo #  107
+Direccion Virtual(Logica): 3872
+offset(Desplazamiento) calculado: 32
+vpn calculado: 30
+
+Fallo #  108
+Direccion Virtual(Logica): 608
+offset(Desplazamiento) calculado: 96
+vpn calculado: 4
+
+Fallo #  109
+Direccion Virtual(Logica): 5760
+offset(Desplazamiento) calculado: 0
+vpn calculado: 45
+
+Fallo #  110
+Direccion Virtual(Logica): 16
+offset(Desplazamiento) calculado: 16
+vpn calculado: 0
+Machine halting!
+
+Ticks: total 632507, idle 0, system 10, user 632497
+Disk I/O: reads 110, writes 48
+Console I/O: reads 0, writes 0
+Paging: faults 110
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

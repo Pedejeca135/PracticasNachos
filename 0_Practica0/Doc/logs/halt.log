@@ -1,0 +1,44 @@
+
+Tamaño del proceso: 1344 Bytes.
+
+Numero de paginas para el proceso: 11.
+
+Tabla de paginas:
+Indice 	No.Marco	Bit Validez
+0 	 0 		 1
+1 	 1 		 1
+2 	 2 		 1
+3 	 3 		 1
+4 	 4 		 1
+5 	 5 		 1
+6 	 6 		 1
+7 	 7 		 1
+8 	 8 		 1
+9 	 9 		 1
+10 	 10 		 1
+
+Mapeo de direcciones logicas:
+Dirección lógica 	 No.Pagina(p) 	 Desplazamiento(d) 	 Dirección Fisica	
+0 			 0 			 0 			 0
+4 			 0 			 4 			 4
+208 			 1 			 80 			 208
+212 			 1 			 84 			 212
+1384 			 10 			 104 			 1384
+216 			 1 			 88 			 216
+1380 			 10 			 100 			 1380
+220 			 1 			 92 			 220
+1376 			 10 			 96 			 1376
+224 			 1 			 96 			 224
+228 			 1 			 100 			 228
+232 			 1 			 104 			 232
+16 			 0 			 16 			 16
+20 			 0 			 20 			 20
+Machine halting!
+
+Ticks: total 20, idle 0, system 10, user 10
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

@@ -1,0 +1,276 @@
+*** thread 0 looped 0 times
+*** thread 1 looped 0 times
+*** thread 0 looped 1 times
+*** thread 1 looped 1 times
+*** thread 0 looped 2 times
+*** thread 1 looped 2 times
+*** thread 0 looped 3 times
+*** thread 1 looped 3 times
+*** thread 0 looped 4 times
+*** thread 1 looped 4 times
+
+
+°° MANUAL DE COMANDOS PARA EL SISTEMA DE ARCHIVOS °°
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-f.
+
+SINTAXIS:
+	./nachos -f 
+
+DESCRIPCION:
+	Formatea el disco de nachos para ser usado.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-cp.
+
+SINTAXIS:
+	./nachos -cp Nombre_Archivo_Unix Nombre_Archivo_Nachos.
+
+DESCRIPCION:
+	Copia un archivo de UNIX a el directorio de nachos como un archivo de nachos.
+
+NOTA:
+	El nombre del archivo de nachos no debe exceder los 9 caracteres.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-p
+
+SINTAXIS:
+	./nachos -p Nombre_Archivo_Nachos
+
+DESCRIPCION:
+	Imprime las caracteristicas del archivo indicado.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-r
+
+SINTAXIS:
+	./nachos -r Nombre_Archivo_Nachos
+
+DESCRIPCION:
+	Elimina del directorio el archivo indicado.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-l
+
+SINTAXIS:
+	./nachos -l
+
+DESCRIPCION:
+	Imprime todos los archivios del directorio de nachos.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-D
+
+SINTAXIS:
+	./nachos -D
+
+DESCRIPCION:
+	Imprime todo el sistema de archivos actual(instanciado) de nachos.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-t
+
+SINTAXIS:
+	./nachos -t
+
+DESCRIPCION:
+	Prueba que funcione correctamente el sistema de archivos.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-sfd
+
+SINTAXIS:
+	./nachos -sfd
+
+DESCRIPCION:
+	Imprime todos sectores libres del sistema de archivos.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-sf
+
+SINTAXIS:
+	./nachos -sf Nombre_Archivo_Nachos
+
+DESCRIPCION:
+	Imprime todos sectores usados por el archivo indicado.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-rf
+
+SINTAXIS:
+	./nachos -rf Nombre_Archivo_Nachos Nuevo_Nombre
+
+DESCRIPCION:
+	Cambia el nombre del archivo indicado a el nuevo nombre.
+
+NOTA:
+	El nombre del nuevo archivo de nachos no debe exceder los 9 caracteres.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-man
+
+SINTAXIS:
+	./nachos -man
+
+DESCRIPCION:
+	Despliega este manual con informacion de todos los comandos
+	del sistema de archivos.
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-help
+
+SINTAXIS:
+	./nachos -help Comando.
+
+DESCRIPCION:
+	Despliega informacion sobre el comando especificado.
+
+NOTA:
+	El comando debe existir para el sistema de archivos.
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------
+
+
+
+NOMBRE:
+	-inf
+
+SINTAXIS:
+	./nachos -info
+
+DESCRIPCION:
+	Despliega informacion sobre el equipo de trabajo.
+
+-------------------------------------------------------------------------------
+
+Machine halting!
+
+Ticks: total 1140, idle 1000, system 140, user 0
+Disk I/O: reads 2, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

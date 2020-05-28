@@ -1,0 +1,15 @@
+
+Tamaño del proceso: 1344 Bytes.
+
+Numero de paginas para el proceso: 11.vpn -> Fallo# 1: 0
+vpn -> Fallo# 2: 1
+vpn -> Fallo# 3: 10
+Machine halting!
+
+Ticks: total 23, idle 0, system 10, user 13
+Disk I/O: reads 3, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 3
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

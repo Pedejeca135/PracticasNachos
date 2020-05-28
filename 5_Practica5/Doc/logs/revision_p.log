@@ -1,0 +1,42 @@
+*** thread 0 looped 0 times
+*** thread 1 looped 0 times
+*** thread 0 looped 1 times
+*** thread 1 looped 1 times
+*** thread 0 looped 2 times
+*** thread 1 looped 2 times
+*** thread 0 looped 3 times
+*** thread 1 looped 3 times
+*** thread 0 looped 4 times
+*** thread 1 looped 4 times
+
+
+----------------  Informacion del equipo  --------------------------
+
+
+Integrantes:
+	Cantú Olivares Pedro de Jesus.
+
+Materia:
+	Sistemas Operativos B
+
+Fecha de entrega:
+	17/Mayo/2020
+
+Semestre:
+	2019-2020-II
+
+Maestra:
+	Marcela Ortiz Hernández
+
+
+--------------------------------------------------------------------
+
+Machine halting!
+
+Ticks: total 1140, idle 1000, system 140, user 0
+Disk I/O: reads 2, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

@@ -34,5 +34,4 @@
 #Archivos de intercambio en memoria virtual
 *.swp
 *.rev
-*.log
 *.coff

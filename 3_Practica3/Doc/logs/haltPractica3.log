@@ -1,0 +1,60 @@
+
+Tamaño del proceso: 1344 Bytes.
+
+Numero de paginas para el proceso: 11.
+
+Tabla de paginas:
+Indice 	No.Marco	Bit Validez
+0 	 0 		 0
+1 	 0 		 0
+2 	 0 		 0
+3 	 0 		 0
+4 	 0 		 0
+5 	 0 		 0
+6 	 0 		 0
+7 	 0 		 0
+8 	 0 		 0
+9 	 0 		 0
+10 	 0 		 0
+
+Fallo #  1
+Direccion Virtual(Logica): 0
+contador de Marco de Asignacion: 0 
+Pagina no encontrada
+Haciendo swaping de ../test/halt.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 0 del archivo de intercambio.
+Nuevo marco para la pagina 0 : 0
+Fallo # 1 Fin.
+
+Fallo #  2
+Direccion Virtual(Logica): 208
+contador de Marco de Asignacion: 1 
+Pagina no encontrada
+Haciendo swaping de ../test/halt.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 128 del archivo de intercambio.
+Nuevo marco para la pagina 1 : 1
+Fallo # 2 Fin.
+
+Fallo #  3
+Direccion Virtual(Logica): 1384
+contador de Marco de Asignacion: 2 
+Pagina no encontrada
+Haciendo swaping de ../test/halt.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1280 del archivo de intercambio.
+Nuevo marco para la pagina 10 : 2
+Fallo # 3 Fin.
+Machine halting!
+
+Ticks: total 23, idle 0, system 10, user 13
+Disk I/O: reads 3, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 3
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

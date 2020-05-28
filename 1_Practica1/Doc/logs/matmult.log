@@ -1,0 +1,8 @@
+../test/matmult.swp
+
+Tamaño del proceso: 6880 Bytes.
+
+Numero de paginas para el proceso: 54.
+
+El tamaño del proceso excede las paginas disponibles( 32 ), y no se ha implementado memoria virtual por lo que no puede ser cargado.
+

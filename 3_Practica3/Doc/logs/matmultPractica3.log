@@ -1,0 +1,1424 @@
+
+Tamaño del proceso: 6880 Bytes.
+
+Numero de paginas para el proceso: 54.
+
+Tabla de paginas:
+Indice 	No.Marco	Bit Validez
+0 	 0 		 0
+1 	 0 		 0
+2 	 0 		 0
+3 	 0 		 0
+4 	 0 		 0
+5 	 0 		 0
+6 	 0 		 0
+7 	 0 		 0
+8 	 0 		 0
+9 	 0 		 0
+10 	 0 		 0
+11 	 0 		 0
+12 	 0 		 0
+13 	 0 		 0
+14 	 0 		 0
+15 	 0 		 0
+16 	 0 		 0
+17 	 0 		 0
+18 	 0 		 0
+19 	 0 		 0
+20 	 0 		 0
+21 	 0 		 0
+22 	 0 		 0
+23 	 0 		 0
+24 	 0 		 0
+25 	 0 		 0
+26 	 0 		 0
+27 	 0 		 0
+28 	 0 		 0
+29 	 0 		 0
+30 	 0 		 0
+31 	 0 		 0
+32 	 0 		 0
+33 	 0 		 0
+34 	 0 		 0
+35 	 0 		 0
+36 	 0 		 0
+37 	 0 		 0
+38 	 0 		 0
+39 	 0 		 0
+40 	 0 		 0
+41 	 0 		 0
+42 	 0 		 0
+43 	 0 		 0
+44 	 0 		 0
+45 	 0 		 0
+46 	 0 		 0
+47 	 0 		 0
+48 	 0 		 0
+49 	 0 		 0
+50 	 0 		 0
+51 	 0 		 0
+52 	 0 		 0
+53 	 0 		 0
+
+Fallo #  1
+Direccion Virtual(Logica): 0
+contador de Marco de Asignacion: 0 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 0 del archivo de intercambio.
+Nuevo marco para la pagina 0 : 0
+Fallo # 1 Fin.
+
+Fallo #  2
+Direccion Virtual(Logica): 208
+contador de Marco de Asignacion: 1 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 128 del archivo de intercambio.
+Nuevo marco para la pagina 1 : 1
+Fallo # 2 Fin.
+
+Fallo #  3
+Direccion Virtual(Logica): 6888
+contador de Marco de Asignacion: 2 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Nuevo marco para la pagina 53 : 2
+Fallo # 3 Fin.
+
+Fallo #  4
+Direccion Virtual(Logica): 264
+contador de Marco de Asignacion: 3 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 384 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 256 del archivo de intercambio.
+Nuevo marco para la pagina 2 : 3
+Fallo # 4 Fin.
+
+Fallo #  5
+Direccion Virtual(Logica): 1040
+contador de Marco de Asignacion: 4 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 512 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1024 del archivo de intercambio.
+Nuevo marco para la pagina 8 : 4
+Fallo # 5 Fin.
+
+Fallo #  6
+Direccion Virtual(Logica): 384
+contador de Marco de Asignacion: 5 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 640 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 384 del archivo de intercambio.
+Nuevo marco para la pagina 3 : 5
+Fallo # 6 Fin.
+
+Fallo #  7
+Direccion Virtual(Logica): 2640
+contador de Marco de Asignacion: 6 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 768 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2560 del archivo de intercambio.
+Nuevo marco para la pagina 20 : 6
+Fallo # 7 Fin.
+
+Fallo #  8
+Direccion Virtual(Logica): 4240
+contador de Marco de Asignacion: 7 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 896 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4224 del archivo de intercambio.
+Nuevo marco para la pagina 33 : 7
+Fallo # 8 Fin.
+
+Fallo #  9
+Direccion Virtual(Logica): 512
+contador de Marco de Asignacion: 8 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1024 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 512 del archivo de intercambio.
+Nuevo marco para la pagina 4 : 8
+Fallo # 9 Fin.
+
+Fallo #  10
+Direccion Virtual(Logica): 2688
+contador de Marco de Asignacion: 9 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1152 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2688 del archivo de intercambio.
+Nuevo marco para la pagina 21 : 9
+Fallo # 10 Fin.
+
+Fallo #  11
+Direccion Virtual(Logica): 1152
+contador de Marco de Asignacion: 10 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1280 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1152 del archivo de intercambio.
+Nuevo marco para la pagina 9 : 10
+Fallo # 11 Fin.
+
+Fallo #  12
+Direccion Virtual(Logica): 4352
+contador de Marco de Asignacion: 11 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1408 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4352 del archivo de intercambio.
+Nuevo marco para la pagina 34 : 11
+Fallo # 12 Fin.
+
+Fallo #  13
+Direccion Virtual(Logica): 2816
+contador de Marco de Asignacion: 12 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2816 del archivo de intercambio.
+Nuevo marco para la pagina 22 : 12
+Fallo # 13 Fin.
+
+Fallo #  14
+Direccion Virtual(Logica): 1280
+contador de Marco de Asignacion: 13 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1664 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1280 del archivo de intercambio.
+Nuevo marco para la pagina 10 : 13
+Fallo # 14 Fin.
+
+Fallo #  15
+Direccion Virtual(Logica): 4480
+contador de Marco de Asignacion: 14 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1792 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4480 del archivo de intercambio.
+Nuevo marco para la pagina 35 : 14
+Fallo # 15 Fin.
+
+Fallo #  16
+Direccion Virtual(Logica): 2944
+contador de Marco de Asignacion: 15 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1920 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2944 del archivo de intercambio.
+Nuevo marco para la pagina 23 : 15
+Fallo # 16 Fin.
+
+Fallo #  17
+Direccion Virtual(Logica): 1408
+contador de Marco de Asignacion: 16 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2048 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1408 del archivo de intercambio.
+Nuevo marco para la pagina 11 : 16
+Fallo # 17 Fin.
+
+Fallo #  18
+Direccion Virtual(Logica): 4608
+contador de Marco de Asignacion: 17 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2176 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4608 del archivo de intercambio.
+Nuevo marco para la pagina 36 : 17
+Fallo # 18 Fin.
+
+Fallo #  19
+Direccion Virtual(Logica): 3072
+contador de Marco de Asignacion: 18 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2304 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3072 del archivo de intercambio.
+Nuevo marco para la pagina 24 : 18
+Fallo # 19 Fin.
+
+Fallo #  20
+Direccion Virtual(Logica): 1536
+contador de Marco de Asignacion: 19 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2432 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1536 del archivo de intercambio.
+Nuevo marco para la pagina 12 : 19
+Fallo # 20 Fin.
+
+Fallo #  21
+Direccion Virtual(Logica): 4736
+contador de Marco de Asignacion: 20 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2560 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4736 del archivo de intercambio.
+Nuevo marco para la pagina 37 : 20
+Fallo # 21 Fin.
+
+Fallo #  22
+Direccion Virtual(Logica): 3200
+contador de Marco de Asignacion: 21 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2688 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3200 del archivo de intercambio.
+Nuevo marco para la pagina 25 : 21
+Fallo # 22 Fin.
+
+Fallo #  23
+Direccion Virtual(Logica): 1664
+contador de Marco de Asignacion: 22 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2816 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1664 del archivo de intercambio.
+Nuevo marco para la pagina 13 : 22
+Fallo # 23 Fin.
+
+Fallo #  24
+Direccion Virtual(Logica): 4864
+contador de Marco de Asignacion: 23 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2944 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4864 del archivo de intercambio.
+Nuevo marco para la pagina 38 : 23
+Fallo # 24 Fin.
+
+Fallo #  25
+Direccion Virtual(Logica): 3328
+contador de Marco de Asignacion: 24 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3072 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3328 del archivo de intercambio.
+Nuevo marco para la pagina 26 : 24
+Fallo # 25 Fin.
+
+Fallo #  26
+Direccion Virtual(Logica): 1792
+contador de Marco de Asignacion: 25 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3200 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1792 del archivo de intercambio.
+Nuevo marco para la pagina 14 : 25
+Fallo # 26 Fin.
+
+Fallo #  27
+Direccion Virtual(Logica): 4992
+contador de Marco de Asignacion: 26 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3328 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4992 del archivo de intercambio.
+Nuevo marco para la pagina 39 : 26
+Fallo # 27 Fin.
+
+Fallo #  28
+Direccion Virtual(Logica): 3456
+contador de Marco de Asignacion: 27 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3456 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3456 del archivo de intercambio.
+Nuevo marco para la pagina 27 : 27
+Fallo # 28 Fin.
+
+Fallo #  29
+Direccion Virtual(Logica): 1920
+contador de Marco de Asignacion: 28 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3584 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1920 del archivo de intercambio.
+Nuevo marco para la pagina 15 : 28
+Fallo # 29 Fin.
+
+Fallo #  30
+Direccion Virtual(Logica): 5120
+contador de Marco de Asignacion: 29 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3712 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5120 del archivo de intercambio.
+Nuevo marco para la pagina 40 : 29
+Fallo # 30 Fin.
+
+Fallo #  31
+Direccion Virtual(Logica): 3584
+contador de Marco de Asignacion: 30 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3840 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3584 del archivo de intercambio.
+Nuevo marco para la pagina 28 : 30
+Fallo # 31 Fin.
+
+Fallo #  32
+Direccion Virtual(Logica): 2048
+contador de Marco de Asignacion: 31 
+Pagina no encontrada
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3968 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2048 del archivo de intercambio.
+Nuevo marco para la pagina 16 : 31
+Fallo # 32 Fin.
+
+Fallo #  33
+Direccion Virtual(Logica): 5248
+contador de Marco de Asignacion: 0 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5248 del archivo de intercambio.
+Nuevo marco para la pagina 41 : 0
+Fallo # 33 Fin.
+
+Fallo #  34
+Direccion Virtual(Logica): 3712
+contador de Marco de Asignacion: 1 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3712 del archivo de intercambio.
+Nuevo marco para la pagina 29 : 1
+Fallo # 34 Fin.
+
+Fallo #  35
+Direccion Virtual(Logica): 236
+contador de Marco de Asignacion: 2 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 128 del archivo de intercambio.
+Nuevo marco para la pagina 1 : 2
+Fallo # 35 Fin.
+
+Fallo #  36
+Direccion Virtual(Logica): 6864
+contador de Marco de Asignacion: 3 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 384 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Nuevo marco para la pagina 53 : 3
+Fallo # 36 Fin.
+
+Fallo #  37
+Direccion Virtual(Logica): 264
+contador de Marco de Asignacion: 4 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 512 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1024 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 512 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 256 del archivo de intercambio.
+Nuevo marco para la pagina 2 : 4
+Fallo # 37 Fin.
+
+Fallo #  38
+Direccion Virtual(Logica): 2176
+contador de Marco de Asignacion: 5 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 640 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2176 del archivo de intercambio.
+Nuevo marco para la pagina 17 : 5
+Fallo # 38 Fin.
+
+Fallo #  39
+Direccion Virtual(Logica): 384
+contador de Marco de Asignacion: 6 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 768 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2560 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 768 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 384 del archivo de intercambio.
+Nuevo marco para la pagina 3 : 6
+Fallo # 39 Fin.
+
+Fallo #  40
+Direccion Virtual(Logica): 5376
+contador de Marco de Asignacion: 7 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 896 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4224 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 896 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5376 del archivo de intercambio.
+Nuevo marco para la pagina 42 : 7
+Fallo # 40 Fin.
+
+Fallo #  41
+Direccion Virtual(Logica): 3840
+contador de Marco de Asignacion: 8 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1024 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3840 del archivo de intercambio.
+Nuevo marco para la pagina 30 : 8
+Fallo # 41 Fin.
+
+Fallo #  42
+Direccion Virtual(Logica): 512
+contador de Marco de Asignacion: 9 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1152 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2688 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1152 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 512 del archivo de intercambio.
+Nuevo marco para la pagina 4 : 9
+Fallo # 42 Fin.
+
+Fallo #  43
+Direccion Virtual(Logica): 2304
+contador de Marco de Asignacion: 10 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1280 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1152 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1280 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2304 del archivo de intercambio.
+Nuevo marco para la pagina 18 : 10
+Fallo # 43 Fin.
+
+Fallo #  44
+Direccion Virtual(Logica): 5504
+contador de Marco de Asignacion: 11 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1408 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4352 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1408 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5504 del archivo de intercambio.
+Nuevo marco para la pagina 43 : 11
+Fallo # 44 Fin.
+
+Fallo #  45
+Direccion Virtual(Logica): 3968
+contador de Marco de Asignacion: 12 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2816 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3968 del archivo de intercambio.
+Nuevo marco para la pagina 31 : 12
+Fallo # 45 Fin.
+
+Fallo #  46
+Direccion Virtual(Logica): 2432
+contador de Marco de Asignacion: 13 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1664 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1280 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1664 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2432 del archivo de intercambio.
+Nuevo marco para la pagina 19 : 13
+Fallo # 46 Fin.
+
+Fallo #  47
+Direccion Virtual(Logica): 5632
+contador de Marco de Asignacion: 14 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1792 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4480 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1792 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5632 del archivo de intercambio.
+Nuevo marco para la pagina 44 : 14
+Fallo # 47 Fin.
+
+Fallo #  48
+Direccion Virtual(Logica): 4096
+contador de Marco de Asignacion: 15 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1920 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2944 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1920 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4096 del archivo de intercambio.
+Nuevo marco para la pagina 32 : 15
+Fallo # 48 Fin.
+
+Fallo #  49
+Direccion Virtual(Logica): 2560
+contador de Marco de Asignacion: 16 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2048 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1408 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2048 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2560 del archivo de intercambio.
+Nuevo marco para la pagina 20 : 16
+Fallo # 49 Fin.
+
+Fallo #  50
+Direccion Virtual(Logica): 5760
+contador de Marco de Asignacion: 17 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2176 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4608 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2176 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5760 del archivo de intercambio.
+Nuevo marco para la pagina 45 : 17
+Fallo # 50 Fin.
+
+Fallo #  51
+Direccion Virtual(Logica): 4224
+contador de Marco de Asignacion: 18 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2304 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3072 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2304 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4224 del archivo de intercambio.
+Nuevo marco para la pagina 33 : 18
+Fallo # 51 Fin.
+
+Fallo #  52
+Direccion Virtual(Logica): 640
+contador de Marco de Asignacion: 19 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2432 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1536 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2432 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 640 del archivo de intercambio.
+Nuevo marco para la pagina 5 : 19
+Fallo # 52 Fin.
+
+Fallo #  53
+Direccion Virtual(Logica): 768
+contador de Marco de Asignacion: 20 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2560 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4736 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2560 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 768 del archivo de intercambio.
+Nuevo marco para la pagina 6 : 20
+Fallo # 53 Fin.
+
+Fallo #  54
+Direccion Virtual(Logica): 1040
+contador de Marco de Asignacion: 21 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2688 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3200 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2688 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1024 del archivo de intercambio.
+Nuevo marco para la pagina 8 : 21
+Fallo # 54 Fin.
+
+Fallo #  55
+Direccion Virtual(Logica): 896
+contador de Marco de Asignacion: 22 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2816 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1664 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2816 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 896 del archivo de intercambio.
+Nuevo marco para la pagina 7 : 22
+Fallo # 55 Fin.
+
+Fallo #  56
+Direccion Virtual(Logica): 2720
+contador de Marco de Asignacion: 23 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2944 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4864 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2944 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2688 del archivo de intercambio.
+Nuevo marco para la pagina 21 : 23
+Fallo # 56 Fin.
+
+Fallo #  57
+Direccion Virtual(Logica): 2880
+contador de Marco de Asignacion: 24 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3072 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3328 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3072 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2816 del archivo de intercambio.
+Nuevo marco para la pagina 22 : 24
+Fallo # 57 Fin.
+
+Fallo #  58
+Direccion Virtual(Logica): 2960
+contador de Marco de Asignacion: 25 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3200 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1792 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3200 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2944 del archivo de intercambio.
+Nuevo marco para la pagina 23 : 25
+Fallo # 58 Fin.
+
+Fallo #  59
+Direccion Virtual(Logica): 3120
+contador de Marco de Asignacion: 26 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3328 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4992 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3328 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3072 del archivo de intercambio.
+Nuevo marco para la pagina 24 : 26
+Fallo # 59 Fin.
+
+Fallo #  60
+Direccion Virtual(Logica): 3200
+contador de Marco de Asignacion: 27 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3456 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3456 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3456 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3200 del archivo de intercambio.
+Nuevo marco para la pagina 25 : 27
+Fallo # 60 Fin.
+
+Fallo #  61
+Direccion Virtual(Logica): 3360
+contador de Marco de Asignacion: 28 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3584 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1920 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3584 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3328 del archivo de intercambio.
+Nuevo marco para la pagina 26 : 28
+Fallo # 61 Fin.
+
+Fallo #  62
+Direccion Virtual(Logica): 3520
+contador de Marco de Asignacion: 29 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3712 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5120 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3712 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3456 del archivo de intercambio.
+Nuevo marco para la pagina 27 : 29
+Fallo # 62 Fin.
+
+Fallo #  63
+Direccion Virtual(Logica): 1152
+contador de Marco de Asignacion: 30 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3840 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3584 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3840 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1152 del archivo de intercambio.
+Nuevo marco para la pagina 9 : 30
+Fallo # 63 Fin.
+
+Fallo #  64
+Direccion Virtual(Logica): 3600
+contador de Marco de Asignacion: 31 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 3968 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2048 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3968 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3584 del archivo de intercambio.
+Nuevo marco para la pagina 28 : 31
+Fallo # 64 Fin.
+
+Fallo #  65
+Direccion Virtual(Logica): 4352
+contador de Marco de Asignacion: 0 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5248 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4352 del archivo de intercambio.
+Nuevo marco para la pagina 34 : 0
+Fallo # 65 Fin.
+
+Fallo #  66
+Direccion Virtual(Logica): 1280
+contador de Marco de Asignacion: 1 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3712 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1280 del archivo de intercambio.
+Nuevo marco para la pagina 10 : 1
+Fallo # 66 Fin.
+
+Fallo #  67
+Direccion Virtual(Logica): 4480
+contador de Marco de Asignacion: 2 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4480 del archivo de intercambio.
+Nuevo marco para la pagina 35 : 2
+Fallo # 67 Fin.
+
+Fallo #  68
+Direccion Virtual(Logica): 3760
+contador de Marco de Asignacion: 3 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 384 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 384 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3712 del archivo de intercambio.
+Nuevo marco para la pagina 29 : 3
+Fallo # 68 Fin.
+
+Fallo #  69
+Direccion Virtual(Logica): 6872
+contador de Marco de Asignacion: 4 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 512 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Nuevo marco para la pagina 53 : 4
+Fallo # 69 Fin.
+
+Fallo #  70
+Direccion Virtual(Logica): 1408
+contador de Marco de Asignacion: 5 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 640 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2176 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 640 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1408 del archivo de intercambio.
+Nuevo marco para la pagina 11 : 5
+Fallo # 70 Fin.
+
+Fallo #  71
+Direccion Virtual(Logica): 4608
+contador de Marco de Asignacion: 6 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 768 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4608 del archivo de intercambio.
+Nuevo marco para la pagina 36 : 6
+Fallo # 71 Fin.
+
+Fallo #  72
+Direccion Virtual(Logica): 1536
+contador de Marco de Asignacion: 7 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 896 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5376 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 896 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1536 del archivo de intercambio.
+Nuevo marco para la pagina 12 : 7
+Fallo # 72 Fin.
+
+Fallo #  73
+Direccion Virtual(Logica): 4736
+contador de Marco de Asignacion: 8 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1024 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3840 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1024 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4736 del archivo de intercambio.
+Nuevo marco para la pagina 37 : 8
+Fallo # 73 Fin.
+
+Fallo #  74
+Direccion Virtual(Logica): 3856
+contador de Marco de Asignacion: 9 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1152 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3840 del archivo de intercambio.
+Nuevo marco para la pagina 30 : 9
+Fallo # 74 Fin.
+
+Fallo #  75
+Direccion Virtual(Logica): 608
+contador de Marco de Asignacion: 10 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1280 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2304 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1280 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 512 del archivo de intercambio.
+Nuevo marco para la pagina 4 : 10
+Fallo # 75 Fin.
+
+Fallo #  76
+Direccion Virtual(Logica): 1664
+contador de Marco de Asignacion: 11 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1408 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5504 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1408 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1664 del archivo de intercambio.
+Nuevo marco para la pagina 13 : 11
+Fallo # 76 Fin.
+
+Fallo #  77
+Direccion Virtual(Logica): 4864
+contador de Marco de Asignacion: 12 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3968 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4864 del archivo de intercambio.
+Nuevo marco para la pagina 38 : 12
+Fallo # 77 Fin.
+
+Fallo #  78
+Direccion Virtual(Logica): 3984
+contador de Marco de Asignacion: 13 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1664 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2432 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1664 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3968 del archivo de intercambio.
+Nuevo marco para la pagina 31 : 13
+Fallo # 78 Fin.
+
+Fallo #  79
+Direccion Virtual(Logica): 1792
+contador de Marco de Asignacion: 14 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1792 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5632 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1792 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1792 del archivo de intercambio.
+Nuevo marco para la pagina 14 : 14
+Fallo # 79 Fin.
+
+Fallo #  80
+Direccion Virtual(Logica): 4992
+contador de Marco de Asignacion: 15 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1920 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4096 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1920 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4992 del archivo de intercambio.
+Nuevo marco para la pagina 39 : 15
+Fallo # 80 Fin.
+
+Fallo #  81
+Direccion Virtual(Logica): 4112
+contador de Marco de Asignacion: 16 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2048 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2560 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2048 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4096 del archivo de intercambio.
+Nuevo marco para la pagina 32 : 16
+Fallo # 81 Fin.
+
+Fallo #  82
+Direccion Virtual(Logica): 2676
+contador de Marco de Asignacion: 17 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2176 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5760 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2176 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2560 del archivo de intercambio.
+Nuevo marco para la pagina 20 : 17
+Fallo # 82 Fin.
+
+Fallo #  83
+Direccion Virtual(Logica): 1920
+contador de Marco de Asignacion: 18 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 2304 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4224 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2304 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 1920 del archivo de intercambio.
+Nuevo marco para la pagina 15 : 18
+Fallo # 83 Fin.
+
+Fallo #  84
+Direccion Virtual(Logica): 5120
+contador de Marco de Asignacion: 19 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2432 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5120 del archivo de intercambio.
+Nuevo marco para la pagina 40 : 19
+Fallo # 84 Fin.
+
+Fallo #  85
+Direccion Virtual(Logica): 640
+contador de Marco de Asignacion: 20 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2560 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 640 del archivo de intercambio.
+Nuevo marco para la pagina 5 : 20
+Fallo # 85 Fin.
+
+Fallo #  86
+Direccion Virtual(Logica): 768
+contador de Marco de Asignacion: 21 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2688 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 768 del archivo de intercambio.
+Nuevo marco para la pagina 6 : 21
+Fallo # 86 Fin.
+
+Fallo #  87
+Direccion Virtual(Logica): 4224
+contador de Marco de Asignacion: 22 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2816 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4224 del archivo de intercambio.
+Nuevo marco para la pagina 33 : 22
+Fallo # 87 Fin.
+
+Fallo #  88
+Direccion Virtual(Logica): 896
+contador de Marco de Asignacion: 23 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 2944 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 896 del archivo de intercambio.
+Nuevo marco para la pagina 7 : 23
+Fallo # 88 Fin.
+
+Fallo #  89
+Direccion Virtual(Logica): 2708
+contador de Marco de Asignacion: 24 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3072 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2688 del archivo de intercambio.
+Nuevo marco para la pagina 21 : 24
+Fallo # 89 Fin.
+
+Fallo #  90
+Direccion Virtual(Logica): 2868
+contador de Marco de Asignacion: 25 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3200 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2816 del archivo de intercambio.
+Nuevo marco para la pagina 22 : 25
+Fallo # 90 Fin.
+
+Fallo #  91
+Direccion Virtual(Logica): 2948
+contador de Marco de Asignacion: 26 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3328 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2944 del archivo de intercambio.
+Nuevo marco para la pagina 23 : 26
+Fallo # 91 Fin.
+
+Fallo #  92
+Direccion Virtual(Logica): 3108
+contador de Marco de Asignacion: 27 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3456 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3072 del archivo de intercambio.
+Nuevo marco para la pagina 24 : 27
+Fallo # 92 Fin.
+
+Fallo #  93
+Direccion Virtual(Logica): 3268
+contador de Marco de Asignacion: 28 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3584 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3200 del archivo de intercambio.
+Nuevo marco para la pagina 25 : 28
+Fallo # 93 Fin.
+
+Fallo #  94
+Direccion Virtual(Logica): 3348
+contador de Marco de Asignacion: 29 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3712 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3328 del archivo de intercambio.
+Nuevo marco para la pagina 26 : 29
+Fallo # 94 Fin.
+
+Fallo #  95
+Direccion Virtual(Logica): 3508
+contador de Marco de Asignacion: 30 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3840 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3456 del archivo de intercambio.
+Nuevo marco para la pagina 27 : 30
+Fallo # 95 Fin.
+
+Fallo #  96
+Direccion Virtual(Logica): 2048
+contador de Marco de Asignacion: 31 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 3968 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2048 del archivo de intercambio.
+Nuevo marco para la pagina 16 : 31
+Fallo # 96 Fin.
+
+Fallo #  97
+Direccion Virtual(Logica): 3600
+contador de Marco de Asignacion: 0 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4352 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 0 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3584 del archivo de intercambio.
+Nuevo marco para la pagina 28 : 0
+Fallo # 97 Fin.
+
+Fallo #  98
+Direccion Virtual(Logica): 5248
+contador de Marco de Asignacion: 1 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 128 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5248 del archivo de intercambio.
+Nuevo marco para la pagina 41 : 1
+Fallo # 98 Fin.
+
+Fallo #  99
+Direccion Virtual(Logica): 2176
+contador de Marco de Asignacion: 2 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4480 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 256 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2176 del archivo de intercambio.
+Nuevo marco para la pagina 17 : 2
+Fallo # 99 Fin.
+
+Fallo #  100
+Direccion Virtual(Logica): 5376
+contador de Marco de Asignacion: 3 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 384 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5376 del archivo de intercambio.
+Nuevo marco para la pagina 42 : 3
+Fallo # 100 Fin.
+
+Fallo #  101
+Direccion Virtual(Logica): 3776
+contador de Marco de Asignacion: 4 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 512 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 512 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3712 del archivo de intercambio.
+Nuevo marco para la pagina 29 : 4
+Fallo # 101 Fin.
+
+Fallo #  102
+Direccion Virtual(Logica): 6872
+contador de Marco de Asignacion: 5 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 640 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 6784 del archivo de intercambio.
+Nuevo marco para la pagina 53 : 5
+Fallo # 102 Fin.
+
+Fallo #  103
+Direccion Virtual(Logica): 2304
+contador de Marco de Asignacion: 6 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 768 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4608 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 768 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2304 del archivo de intercambio.
+Nuevo marco para la pagina 18 : 6
+Fallo # 103 Fin.
+
+Fallo #  104
+Direccion Virtual(Logica): 5504
+contador de Marco de Asignacion: 7 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 896 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5504 del archivo de intercambio.
+Nuevo marco para la pagina 43 : 7
+Fallo # 104 Fin.
+
+Fallo #  105
+Direccion Virtual(Logica): 2432
+contador de Marco de Asignacion: 8 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1024 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4736 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1024 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 2432 del archivo de intercambio.
+Nuevo marco para la pagina 19 : 8
+Fallo # 105 Fin.
+
+Fallo #  106
+Direccion Virtual(Logica): 5632
+contador de Marco de Asignacion: 9 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1152 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5632 del archivo de intercambio.
+Nuevo marco para la pagina 44 : 9
+Fallo # 106 Fin.
+
+Fallo #  107
+Direccion Virtual(Logica): 3872
+contador de Marco de Asignacion: 10 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1280 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 3840 del archivo de intercambio.
+Nuevo marco para la pagina 30 : 10
+Fallo # 107 Fin.
+
+Fallo #  108
+Direccion Virtual(Logica): 608
+contador de Marco de Asignacion: 11 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1408 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 512 del archivo de intercambio.
+Nuevo marco para la pagina 4 : 11
+Fallo # 108 Fin.
+
+Fallo #  109
+Direccion Virtual(Logica): 5760
+contador de Marco de Asignacion: 12 
+Haciendo swapOut a ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 4864 del archivo de intercambio.
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1536 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 5760 del archivo de intercambio.
+Nuevo marco para la pagina 45 : 12
+Fallo # 109 Fin.
+
+Fallo #  110
+Direccion Virtual(Logica): 16
+contador de Marco de Asignacion: 13 
+Haciendo swapOut a ../test/matmult.swp
+Haciendo swaping de ../test/matmult.swp
+Escribiendo en la direccion 1664 de la memoria principal
+Tamaño de escritura: 128
+Desde la direccion 0 del archivo de intercambio.
+Nuevo marco para la pagina 0 : 13
+Fallo # 110 Fin.
+Machine halting!
+
+Ticks: total 632507, idle 0, system 10, user 632497
+Disk I/O: reads 110, writes 48
+Console I/O: reads 0, writes 0
+Paging: faults 110
+Network I/O: packets received 0, sent 0
+
+Cleaning up...

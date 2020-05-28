@@ -1,0 +1,7 @@
+
+Tamaño del proceso: 5920 Bytes.
+
+Numero de paginas para el proceso: 47.
+
+El tamaño del proceso excede las paginas disponibles( 32 ), y no se ha implementado memoria virtual por lo que no puede ser cargado.
+
